@@ -43,6 +43,7 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    
     public function oneRowExists()
     {
         return self::exists();
