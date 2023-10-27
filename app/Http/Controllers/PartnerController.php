@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Partner;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class PartnerController extends Controller
 {
+    protected string $image_store_path = 'partners/image';
+
     /**
      * Display a listing of the resource.
      */
@@ -28,7 +31,12 @@ class PartnerController extends Controller
      */
     public function store(Request $request)
     {
-        $partner = Partner::create($request->all());
+        $image = $request->logo ? store_in_public(destination: $this->image_store_path, image: $request->logo) : null;
+
+        $request            = $request->all();
+        $request['logo']    = $image;
+
+        $partner = Partner::create($request);
 
         if ($partner) {
 
@@ -59,7 +67,20 @@ class PartnerController extends Controller
      */
     public function update(Request $request, Partner $partner)
     {
-        $partner->update($request->all());
+        $logo  = $partner->logo;
+
+        if ($request->hasFile('logo')) {
+
+            File::delete(public_path($this->image_store_path . '/' . $logo));
+
+            $logo = store_in_public(destination: $this->image_store_path, image: $request->logo);
+        }
+
+        $request = $request->all();
+
+        $request['logo'] = $logo;
+
+        $partner->update($request);
 
         if ($partner) {
 
@@ -74,6 +95,13 @@ class PartnerController extends Controller
      */
     public function destroy(Partner $partner)
     {
+        $logo  = $partner->logo;
+
+        if ($logo) {
+
+            File::delete(public_path($this->image_store_path . '/' . $logo));
+        }
+
         $partner = $partner->delete();
 
         if ($partner) {
@@ -83,6 +111,7 @@ class PartnerController extends Controller
                 'status' => 200,
             ], 200);
         } else {
+
             return response()->json([
                 'error' => 'This record can\'t delete!',
                 'status' => 500,

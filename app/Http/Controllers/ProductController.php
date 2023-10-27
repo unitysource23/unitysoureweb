@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
+    protected string $image_store_path = 'products/image';
+    protected string $video_store_path = 'products/videos';
+
     /**
      * Display a listing of the resource.
      */
@@ -28,7 +32,15 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product = Product::create($request->all());
+        $image = $request->image ? store_in_public(destination: $this->image_store_path, image: $request->image) : null;
+
+        $demo_video = $request->demo_video ? store_in_public(destination: $this->video_store_path, image: $request->demo_video) : null;
+
+        $request                    = $request->all();
+        $request['image']           = $image;
+        $request['demo_video']      = $demo_video;
+
+        $product = Product::create($request);
 
         if ($product) {
 
@@ -59,7 +71,29 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $product->update($request->all());
+        $image      = $product->image;
+        $demo_video = $product->demo_video;
+
+        if ($request->hasFile('image')) {
+
+            File::delete(public_path($this->image_store_path . '/' . $image));
+
+            $image = store_in_public(destination: $this->image_store_path, image: $request->image);
+        }
+
+        if ($request->hasFile('demo_video')) {
+
+            File::delete(public_path($this->video_store_path . '/' . $demo_video));
+
+            $demo_video = store_in_public(destination: $this->video_store_path, image: $request->demo_video);
+        }
+
+        $request = $request->all();
+
+        $request['logo']        = $image;
+        $request['demo_video']  = $demo_video;
+
+        $product->update($request);
 
         if ($product) {
 
@@ -74,6 +108,19 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        $image      = $product->image;
+        $demo_video = $product->demo_video;
+
+        if ($image) {
+
+            File::delete(public_path($this->image_store_path . '/' . $image));
+        }
+
+        if ($demo_video) {
+
+            File::delete(public_path($this->video_store_path . '/' . $demo_video));
+        }
+
         $product = $product->delete();
 
         if ($product) {
