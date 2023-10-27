@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class TeamController extends Controller
 {
+    protected string $image_store_path = 'teams/image';
+
     /**
      * Display a listing of the resource.
      */
@@ -28,7 +31,12 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $team = Team::create($request->all());
+        $profile = $request->profile ? store_in_public(destination: $this->image_store_path, image: $request->profile) : null;
+
+        $request                = $request->all();
+        $request['profile']     = $profile;
+
+        $team = Team::create($request);
 
         if ($team) {
 
@@ -59,7 +67,20 @@ class TeamController extends Controller
      */
     public function update(Request $request, Team $team)
     {
-        $team->update($request->all());
+        $profile  = $team->profile;
+
+        if ($request->hasFile('profile')) {
+
+            File::delete(public_path($this->image_store_path . '/' . $profile));
+
+            $profile = store_in_public(destination: $this->image_store_path, image: $request->profile);
+        }
+
+        $request = $request->all();
+
+        $request['profile'] = $profile;
+
+        $team->update($request);
 
         if ($team) {
 
@@ -74,6 +95,13 @@ class TeamController extends Controller
      */
     public function destroy(Team $team)
     {
+        $profile  = $team->profile;
+
+        if ($profile) {
+
+            File::delete(public_path($this->image_store_path . '/' . $profile));
+        }
+
         $team = $team->delete();
 
         if ($team) {

@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ClientController extends Controller
 {
+    protected string $image_store_path = 'clients/image';
     /**
      * Display a listing of the resource.
      */
@@ -28,7 +30,12 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        $client = Client::create($request->all());
+        $image = $request->logo ? store_in_public(destination: $this->image_store_path, image: $request->logo) : null;
+
+        $request            = $request->all();
+        $request['logo']    = $image;
+
+        $client = Client::create($request);
 
         if ($client) {
 
@@ -59,7 +66,20 @@ class ClientController extends Controller
      */
     public function update(Request $request, Client $client)
     {
-        $client->update($request->all());
+        $logo  = $client->logo;
+
+        if ($request->hasFile('logo')) {
+
+            File::delete(public_path($this->image_store_path . '/' . $logo));
+
+            $logo = store_in_public(destination: $this->image_store_path, image: $request->logo);
+        }
+
+        $request        = $request->all();
+
+        $request['logo'] = $logo;
+
+        $client->update($request);
 
         if ($client) {
 
@@ -74,6 +94,13 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
+        $logo  = $client->logo;
+
+        if ($logo) {
+
+            File::delete(public_path($this->image_store_path . '/' . $logo));
+        }
+
         $client = $client->delete();
 
         if ($client) {
