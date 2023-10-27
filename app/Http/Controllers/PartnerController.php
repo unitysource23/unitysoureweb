@@ -15,7 +15,9 @@ class PartnerController extends Controller
      */
     public function index()
     {
-        return view('backend.partner.index');
+        $parnters = Partner::paginate(10);
+
+        return view('backend.partner.index', compact('parnters'));
     }
 
     /**

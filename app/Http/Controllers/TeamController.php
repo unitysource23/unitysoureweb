@@ -15,7 +15,9 @@ class TeamController extends Controller
      */
     public function index()
     {
-        return view('backend.team.index');
+        $teams = Team::paginate(10);
+
+        return view('backend.team.index', compact('teams'));
     }
 
     /**
