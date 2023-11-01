@@ -21,16 +21,9 @@ class AppSettingsQuery implements AppSettingsInterface
         return AppSettings::create($request->all());
     }
 
-    public function getByID(AppSettings $app_settings)
-    {
-
-        return $app_settings;
-    }
 
     public function update(AppSettings $app_settings, Request $request)
     {
-        $app_settings = $this->getByID($app_settings);
-
         if ($app_settings) {
 
             $app_settings->update($request->all());
@@ -41,11 +34,8 @@ class AppSettingsQuery implements AppSettingsInterface
         return null;
     }
 
-    public function delete($id)
+    public function delete(AppSettings $app_settings)
     {
-
-        $app_settings = $this->getByID($id);
-
         if ($app_settings) {
 
             $app_settings->delete();

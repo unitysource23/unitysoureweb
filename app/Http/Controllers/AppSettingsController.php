@@ -61,9 +61,7 @@ class AppSettingsController extends Controller
      */
     public function edit(AppSettings $app_settings)
     {
-        $settings = $this->app_settings_repository->getByID($app_settings);
-
-        return view('backend.app_settings_repository.edit', compact('settings'));
+        return view('backend.app_settings_repository.edit', compact('app_settings'));
     }
 
     /**

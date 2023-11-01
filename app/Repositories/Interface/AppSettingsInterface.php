@@ -11,8 +11,6 @@ interface AppSettingsInterface
 
     public function create(Request $request);
 
-    public function getByID(AppSettings $app_settings);
-
     public function update(AppSettings $app_settings, Request $request);
 
     public function delete(AppSettings $app_settings);
