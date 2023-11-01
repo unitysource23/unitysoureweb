@@ -15,7 +15,7 @@ class AppSettingsQuery implements AppSettingsInterface
         return AppSettings::orderByDesc('id')->paginate(10);
     }
 
-    public function create(Request $request)
+    public function store(Request $request)
     {
 
         return AppSettings::create($request->all());

@@ -2,38 +2,36 @@
 
 namespace App\Repositories\Query;
 
-use App\Models\Partner;
-use App\Repositories\Interface\ParnterInterface;
+use App\Models\Client;
+use App\Repositories\Interface\ClientInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
-class PartnerQuery implements ParnterInterface
+class ClientQuery implements ClientInterface
 {
-    protected string $image_store_path = 'partners/image';
+    protected string $image_store_path = 'clients/image';
 
     public function index()
     {
-
-        return Partner::orderByDesc('id')->paginate(10);
+        return Client::orderByDesc('id')->paginate(10);
     }
 
     public function store(Request $request)
     {
-
         $image = $request->logo ? store_in_public(destination: $this->image_store_path, image: $request->logo) : null;
 
         $request            = $request->all();
         $request['logo']    = $image;
 
-        return Partner::create($request);
+        return Client::create($request);
     }
 
 
-    public function update(Partner $partner, Request $request)
+    public function update(Client $client, Request $request)
     {
-        if ($partner) {
+        if ($client) {
 
-            $logo  = $partner->logo;
+            $logo  = $client->logo;
 
             if ($request->hasFile('logo')) {
 
@@ -42,30 +40,30 @@ class PartnerQuery implements ParnterInterface
                 $logo = store_in_public(destination: $this->image_store_path, image: $request->logo);
             }
 
-            $request = $request->all();
+            $request        = $request->all();
 
             $request['logo'] = $logo;
 
-            $partner->update($request);
+            $client->update($request);
 
-            return $partner;
+            return $client;
         }
 
         return null;
     }
 
-    public function delete(Partner $partner)
+    public function delete(Client $client)
     {
-        if ($partner) {
+        if ($client) {
 
-            $logo  = $partner->logo;
+            $logo  = $client->logo;
 
             if ($logo) {
 
                 File::delete(public_path($this->image_store_path . '/' . $logo));
             }
 
-            $partner->delete();
+            $client->delete();
 
             return true;
         }

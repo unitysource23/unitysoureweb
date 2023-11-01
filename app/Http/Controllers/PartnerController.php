@@ -40,7 +40,7 @@ class PartnerController extends Controller
     public function store(Request $request)
     {
 
-        $parnter = $this->parnter_repository->create(request: $request);
+        $parnter = $this->parnter_repository->store(request: $request);
 
         if ($parnter) {
 

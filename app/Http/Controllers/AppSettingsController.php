@@ -38,7 +38,7 @@ class AppSettingsController extends Controller
     public function store(Request $request)
     {
 
-        $settings = $this->app_settings_repository->create(request: $request);
+        $settings = $this->app_settings_repository->store(request: $request);
 
         if ($settings) {
 

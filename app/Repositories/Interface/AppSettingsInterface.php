@@ -9,7 +9,7 @@ interface AppSettingsInterface
 {
     public function index();
 
-    public function create(Request $request);
+    public function store(Request $request);
 
     public function update(AppSettings $app_settings, Request $request);
 

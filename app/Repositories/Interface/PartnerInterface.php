@@ -9,7 +9,7 @@ interface ParnterInterface
 {
     public function index();
 
-    public function create(Request $request);
+    public function store(Request $request);
 
     public function update(Partner $partner, Request $request);
 
