@@ -38,7 +38,7 @@ class AppSettingsController extends Controller
     public function store(Request $request)
     {
 
-        $settings = $this->app_settings_repository->create($request);
+        $settings = $this->app_settings_repository->create(request: $request);
 
         if ($settings) {
 
@@ -69,7 +69,7 @@ class AppSettingsController extends Controller
      */
     public function update(Request $request, AppSettings $app_settings)
     {
-        $settings = $this->app_settings_repository->update($app_settings, $request);
+        $settings = $this->app_settings_repository->update(app_settings: $app_settings, request: $request);
 
         if ($settings) {
 
@@ -84,7 +84,7 @@ class AppSettingsController extends Controller
      */
     public function destroy(AppSettings $app_settings)
     {
-        $settings = $this->app_settings_repository->delete($app_settings);
+        $settings = $this->app_settings_repository->delete(app_settings: $app_settings);
 
         if ($settings) {
 
