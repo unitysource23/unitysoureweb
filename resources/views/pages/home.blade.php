@@ -8,10 +8,11 @@ DOCTYPE html>
     <title>Document</title>
     @vite('resources/css/app.css')
     <link href="{{ asset('css/fontawesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 
 </head>
 <body class="font-jakarta">
-    <section>
+    <section class="home h-screen">
         <nav class=" py-2 px-10 text-sm shadow-md">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
@@ -39,34 +40,44 @@ DOCTYPE html>
                         </div>
                     </div>
                 </div>
-                <div class="sm:hidden">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="sm:hidden" id="showMoreButton">
+                    <i class="fa-solid fa-bars cursor-pointer"></i>
                 </div>
 
             </div>
-            <div class="flex flex-col mt-5 gap-5">
-                <ul class="flex flex-col  gap-10 text-primary font-semibold">
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Partnership</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-                <div class="border px-2 py-1 rounded-md">
-                    <h1 class="text-paraColor font-medium">English <span><i class="fa-solid fa-angle-down"></i></span></h1>
+            <div class=" content is-collapsed" id="additionalFilter">
+                <div class="flex flex-col mt-5 gap-5">
+                    <ul class="flex flex-col  gap-10 text-primary font-semibold">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Partnership</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="border px-2 w-20 py-1 rounded-md">
+                        <h1 class="text-paraColor font-medium">English <span><i class="fa-solid fa-angle-down"></i></span></h1>
+                    </div>
                 </div>
             </div>
+
 
         </nav>
+        <div class="bg-[url('/images/bg-image.png')]">
+            {{--  <img src="{{ asset('images/bg-image.png') }}" alt="">  --}}
+        </div>
+    </section>
+
+
     </section>
 <script src="{{ asset('js/fontawesome.js') }}"></script>
+<script src="{{ asset('js/home.js') }}"></script>
 
 </body>
 </html>
