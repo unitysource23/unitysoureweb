@@ -3,18 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Repositories\Interface\ClientInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 class ClientController extends Controller
 {
-    protected string $image_store_path = 'clients/image';
+    private $client_repository;
+
+    public function __construct(ClientInterface $client_repository)
+    {
+        $this->client_repository = $client_repository;
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('backend.client.index');
+        $clients = $this->client_repository->index();
+
+        return view('backend.client.index', compact('clients'));
     }
 
     /**
@@ -30,12 +39,7 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        $image = $request->logo ? store_in_public(destination: $this->image_store_path, image: $request->logo) : null;
-
-        $request            = $request->all();
-        $request['logo']    = $image;
-
-        $client = Client::create($request);
+        $client = $this->client_repository->store(request: $request);
 
         if ($client) {
 
@@ -66,20 +70,7 @@ class ClientController extends Controller
      */
     public function update(Request $request, Client $client)
     {
-        $logo  = $client->logo;
-
-        if ($request->hasFile('logo')) {
-
-            File::delete(public_path($this->image_store_path . '/' . $logo));
-
-            $logo = store_in_public(destination: $this->image_store_path, image: $request->logo);
-        }
-
-        $request        = $request->all();
-
-        $request['logo'] = $logo;
-
-        $client->update($request);
+        $client = $this->client_repository->update(client: $client, request: $request);
 
         if ($client) {
 
@@ -94,14 +85,7 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
-        $logo  = $client->logo;
-
-        if ($logo) {
-
-            File::delete(public_path($this->image_store_path . '/' . $logo));
-        }
-
-        $client = $client->delete();
+        $client = $this->client_repository->delete(client: $client);
 
         if ($client) {
 

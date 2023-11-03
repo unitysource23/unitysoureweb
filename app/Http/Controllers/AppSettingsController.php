@@ -3,16 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Models\AppSettings;
+use App\Repositories\Interface\AppSettingsInterface;
 use Illuminate\Http\Request;
 
 class AppSettingsController extends Controller
 {
+    private $app_settings_repository;
+
+    public function __construct(AppSettingsInterface $app_settings_repository)
+    {
+        $this->app_settings_repository = $app_settings_repository;
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('backend.app_settings.index');
+        $settings = $this->app_settings_repository->index();
+
+        return view('backend.app_settings_repository.index', compact('settings'));
     }
 
     /**
@@ -20,7 +29,7 @@ class AppSettingsController extends Controller
      */
     public function create()
     {
-        return view('backend.app_settings.create');
+        return view('backend.app_settings_repository.create');
     }
 
     /**
@@ -28,7 +37,8 @@ class AppSettingsController extends Controller
      */
     public function store(Request $request)
     {
-        $settings = AppSettings::create($request->all());
+
+        $settings = $this->app_settings_repository->store(request: $request);
 
         if ($settings) {
 
@@ -51,7 +61,7 @@ class AppSettingsController extends Controller
      */
     public function edit(AppSettings $app_settings)
     {
-        return view('backend.app_settings.edit', compact('app_settings'));
+        return view('backend.app_settings_repository.edit', compact('app_settings'));
     }
 
     /**
@@ -59,9 +69,9 @@ class AppSettingsController extends Controller
      */
     public function update(Request $request, AppSettings $app_settings)
     {
-        $app_settings->update($request->all());
+        $settings = $this->app_settings_repository->update(app_settings: $app_settings, request: $request);
 
-        if ($app_settings) {
+        if ($settings) {
 
             return redirect()->route('app-settings')->with('success', 'Success!');
         }
@@ -74,9 +84,9 @@ class AppSettingsController extends Controller
      */
     public function destroy(AppSettings $app_settings)
     {
-        $app_settings = $app_settings->delete();
+        $settings = $this->app_settings_repository->delete(app_settings: $app_settings);
 
-        if ($app_settings) {
+        if ($settings) {
 
             return response()->json([
                 'message' => 'The record has been deleted successfully.',

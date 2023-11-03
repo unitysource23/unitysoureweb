@@ -3,20 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Repositories\Interface\ProductInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
-    protected string $image_store_path = 'products/image';
-    protected string $video_store_path = 'products/videos';
+    private $product_repository;
+
+    public function __construct(ProductInterface $product_repository)
+    {
+        $this->product_repository = $product_repository;
+    }
 
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('backend.product.index');
+        $products = $this->product_repository->index();
+
+        return view('backend.product.index', compact('products'));
     }
 
     /**
@@ -32,15 +39,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $image = $request->image ? store_in_public(destination: $this->image_store_path, image: $request->image) : null;
-
-        $demo_video = $request->demo_video ? store_in_public(destination: $this->video_store_path, image: $request->demo_video) : null;
-
-        $request                    = $request->all();
-        $request['image']           = $image;
-        $request['demo_video']      = $demo_video;
-
-        $product = Product::create($request);
+        $product = $this->product_repository->store(request: $request);
 
         if ($product) {
 
@@ -71,29 +70,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $image      = $product->image;
-        $demo_video = $product->demo_video;
-
-        if ($request->hasFile('image')) {
-
-            File::delete(public_path($this->image_store_path . '/' . $image));
-
-            $image = store_in_public(destination: $this->image_store_path, image: $request->image);
-        }
-
-        if ($request->hasFile('demo_video')) {
-
-            File::delete(public_path($this->video_store_path . '/' . $demo_video));
-
-            $demo_video = store_in_public(destination: $this->video_store_path, image: $request->demo_video);
-        }
-
-        $request = $request->all();
-
-        $request['logo']        = $image;
-        $request['demo_video']  = $demo_video;
-
-        $product->update($request);
+        $product = $this->product_repository->update(product: $product, request: $request);
 
         if ($product) {
 
@@ -108,20 +85,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        $image      = $product->image;
-        $demo_video = $product->demo_video;
-
-        if ($image) {
-
-            File::delete(public_path($this->image_store_path . '/' . $image));
-        }
-
-        if ($demo_video) {
-
-            File::delete(public_path($this->video_store_path . '/' . $demo_video));
-        }
-
-        $product = $product->delete();
+        $product = $this->product_repository->delete(product: $product);
 
         if ($product) {
 

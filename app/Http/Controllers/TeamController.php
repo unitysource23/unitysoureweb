@@ -3,19 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Team;
+use App\Repositories\Interface\TeamInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 class TeamController extends Controller
 {
-    protected string $image_store_path = 'teams/image';
+    private $team_repository;
 
+    public function __construct(TeamInterface $team_repository)
+    {
+        $this->team_repository = $team_repository;
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('backend.team.index');
+        $teams = $this->team_repository->index();
+
+        return view('backend.team.index', compact('teams'));
     }
 
     /**
@@ -31,12 +38,7 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $profile = $request->profile ? store_in_public(destination: $this->image_store_path, image: $request->profile) : null;
-
-        $request                = $request->all();
-        $request['profile']     = $profile;
-
-        $team = Team::create($request);
+        $team = $this->team_repository->store(request: $request);
 
         if ($team) {
 
@@ -67,20 +69,7 @@ class TeamController extends Controller
      */
     public function update(Request $request, Team $team)
     {
-        $profile  = $team->profile;
-
-        if ($request->hasFile('profile')) {
-
-            File::delete(public_path($this->image_store_path . '/' . $profile));
-
-            $profile = store_in_public(destination: $this->image_store_path, image: $request->profile);
-        }
-
-        $request = $request->all();
-
-        $request['profile'] = $profile;
-
-        $team->update($request);
+        $team = $this->team_repository->update(team: $team, request: $request);
 
         if ($team) {
 
@@ -95,14 +84,7 @@ class TeamController extends Controller
      */
     public function destroy(Team $team)
     {
-        $profile  = $team->profile;
-
-        if ($profile) {
-
-            File::delete(public_path($this->image_store_path . '/' . $profile));
-        }
-
-        $team = $team->delete();
+        $team = $this->team_repository->delete(team: $team);
 
         if ($team) {
 

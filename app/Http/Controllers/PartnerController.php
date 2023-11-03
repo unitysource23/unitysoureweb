@@ -3,19 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Models\Partner;
+use App\Repositories\Interface\ParnterInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 class PartnerController extends Controller
 {
-    protected string $image_store_path = 'partners/image';
 
+    private $parnter_repository;
+
+    public function __construct(ParnterInterface $parnter_repository)
+    {
+        $this->parnter_repository = $parnter_repository;
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('backend.partner.index');
+        $parnters = $this->parnter_repository->index();
+
+        return view('backend.partner.index', compact('parnters'));
     }
 
     /**
@@ -31,14 +39,10 @@ class PartnerController extends Controller
      */
     public function store(Request $request)
     {
-        $image = $request->logo ? store_in_public(destination: $this->image_store_path, image: $request->logo) : null;
 
-        $request            = $request->all();
-        $request['logo']    = $image;
+        $parnter = $this->parnter_repository->store(request: $request);
 
-        $partner = Partner::create($request);
-
-        if ($partner) {
+        if ($parnter) {
 
             return redirect()->route('partner')->with('success', 'Success');
         }
@@ -67,20 +71,7 @@ class PartnerController extends Controller
      */
     public function update(Request $request, Partner $partner)
     {
-        $logo  = $partner->logo;
-
-        if ($request->hasFile('logo')) {
-
-            File::delete(public_path($this->image_store_path . '/' . $logo));
-
-            $logo = store_in_public(destination: $this->image_store_path, image: $request->logo);
-        }
-
-        $request = $request->all();
-
-        $request['logo'] = $logo;
-
-        $partner->update($request);
+        $partner = $this->parnter_repository->update(partner: $partner, request: $request);
 
         if ($partner) {
 
@@ -95,14 +86,8 @@ class PartnerController extends Controller
      */
     public function destroy(Partner $partner)
     {
-        $logo  = $partner->logo;
 
-        if ($logo) {
-
-            File::delete(public_path($this->image_store_path . '/' . $logo));
-        }
-
-        $partner = $partner->delete();
+        $partner = $this->parnter_repository->delete(partner: $partner);
 
         if ($partner) {
 
