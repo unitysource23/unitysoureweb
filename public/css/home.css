@@ -2,7 +2,7 @@
 .content {
     overflow: hidden;
     height: auto;
-    max-height: 300px;
+    
     width: 100%;
     transition: max-height 1s linear;
 }
@@ -12,9 +12,4 @@
     transition:max-height 1s linear;
 }
 
-.home-section{
-    background-image: url('{{ asset('images/bg-image.png') }}');
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-}
+

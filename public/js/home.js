@@ -1,21 +1,26 @@
 
-const button = document.getElementById('showMoreButton');
+const button = document.getElementById('menuButton');
 const content = document.getElementById('additionalFilter');
 
-button.addEventListener('click', () => {
-    if (content.hidden) {
-        content.hidden = false;
-        setTimeout(() => {
-            content.classList.add('is-collapsed');
-        }, 100);
-    } else {
-        content.classList.remove('is-collapsed');
-        // content.hidden=true;
-        setTimeout(() => {
-            content.hidden = true;
-        }, 1000);
-    }
-});
+button.addEventListener("click",()=>{
+    console.log("click");
+    content.classList.toggle("hidden");
+})
+
+// button.addEventListener('click', () => {
+//     if (content.hidden) {
+//         content.hidden = false;
+//         setTimeout(() => {
+//             content.classList.add('is-collapsed');
+//         }, 100);
+//     } else {
+//         content.classList.remove('is-collapsed');
+
+//         setTimeout(() => {
+//             content.hidden = true;
+//         }, 1000);
+//     }
+// });
 
 
 
