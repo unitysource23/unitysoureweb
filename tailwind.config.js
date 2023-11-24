@@ -12,14 +12,14 @@ export default {
 
           },
           colors: {
-            primary: '#00812C',
+            primary: '#128100',
             paraColor:"#777777",
 
           },
     },
   },
   plugins: [
-    
+
   ],
 }
 

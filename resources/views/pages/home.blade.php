@@ -11,8 +11,6 @@
         <link href="{{ asset('css/home.css') }}" rel="stylesheet">
         <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
         <link href="{{ asset('css/hover.css') }}" rel="stylesheet">
-        <!-- Include compiled CSS -->
-
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
@@ -228,8 +226,6 @@
 
             </div>
 
-            {{--  fast move start   --}}
-
             <div class="mx-10  mt-20">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <div class="col-span-1 flex items-center ">
@@ -345,17 +341,12 @@
                     </div>
 
                     <div class="swiper-pagination"></div>
-
-
-                        <div class=" swiper-button-next">
+                    {{--  <div class=" swiper-button-next">
                             <i class="fa-solid fa-arrow-right-long   "></i>
-                        </div>
-
-                    <div class="swiper-button-prev">
-                        <div>
-                            <i class="fa-solid fa-arrow-left-long"></i>
-                        </div>
                     </div>
+                    <div class="swiper-button-prev">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>  --}}
 
                 </div>
                 <div class="text-center mt-5">
@@ -367,33 +358,87 @@
             </div>
 
             {{--  Our Client start   --}}
-            <div class="mx-10 h-screen mt-14">
+            <div class=" mx-5 lg:mx-10 h-screen mt-14">
                 <h1 class="text-center font-bold text-lg lg:text-2xl mb-7 ">Our Clients</h1>
-                <div class="grid grid-cols-2 gap-10">
-                    <div class="col-span-1">
-                        <div class="relative cursor-pointer img-hover-zoom ">
-                            <img src="{{ asset('images/work.jpg') }}" class="-z-10" alt="">
-                            <div class="w-4/5 bg-primary h-[100px] absolute -bottom-12 left-[10%]  z-50  mx-auto ">
-                                <div class="px-4 py-2">
-                                    <h1 class="text-white  text-xl mb-1 ">
-                                        Fast move Distribution Software
-                                    </h1>
-                                    <h1 class="text-sm text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                </div>
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="col-span-1 relative group">
+                                <div class=" cursor-pointer img-hover-zoom  ">
+                                    <img src="{{ asset('images/work.jpg') }}" class="" alt="">
 
+                                </div>
+                                <div class="w-4/5 fast-move group-hover:-translate-y-20 group-hover:duration-300 bg-primary h-[100px] absolute -bottom-12 left-[10%]  z-50  mx-auto ">
+                                    <div class="px-4 py-2">
+                                        <h1 class="text-white text-sm  lg:text-xl mb-1 ">
+                                            Fast move Distribution Software
+                                        </h1>
+                                        <h1 class=" text-xs lg:text-sm text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-span-1 relative group">
+                                <div class=" cursor-pointer img-hover-zoom  ">
+                                    <img src="{{ asset('images/work.jpg') }}" class="" alt="">
+
+                                </div>
+                                <div class="w-4/5 fast-move group-hover:-translate-y-20 group-hover:duration-300 bg-primary h-[100px] absolute -bottom-12 left-[10%]  z-50  mx-auto ">
+                                    <div class="px-4 py-2">
+                                        <h1 class="text-white text-sm  lg:text-xl mb-1 ">
+                                            Fast move Distribution Software
+                                        </h1>
+                                        <h1 class=" text-xs lg:text-sm text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-span-1 relative group">
+                                <div class=" cursor-pointer img-hover-zoom  ">
+                                    <img src="{{ asset('images/work.jpg') }}" class="" alt="">
+
+                                </div>
+                                <div class="w-4/5 fast-move group-hover:-translate-y-20 group-hover:duration-300 bg-primary h-[100px] absolute -bottom-12 left-[10%]  z-50  mx-auto ">
+                                    <div class="px-4 py-2">
+                                        <h1 class="text-white text-sm  lg:text-xl mb-1 ">
+                                            Fast move Distribution Software
+                                        </h1>
+                                        <h1 class=" text-xs lg:text-sm text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-span-1 relative group">
+                                <div class=" cursor-pointer img-hover-zoom  ">
+                                    <img src="{{ asset('images/work.jpg') }}" class="" alt="">
+
+                                </div>
+                                <div class="w-4/5 fast-move group-hover:-translate-y-20 group-hover:duration-300 bg-primary h-[100px] absolute -bottom-12 left-[10%]  z-50  mx-auto ">
+                                    <div class="px-4 py-2">
+                                        <h1 class="text-white text-sm lg:text-xl mb-1 ">
+                                            Fast move Distribution Software
+                                        </h1>
+                                        <h1 class=" text-xs lg:text-sm text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1">
-                        <div>
-                            <img src="{{ asset('images/home.jpg') }}" class="" alt="">
-                        </div>
-                    </div>
-
+                    <div class="swiper-pagination"></div>
                 </div>
 
             </div>
 
+            <div class="bg-[#DEFFD8] mb-10">
+                <div class="text-center py-10">
+                    <h1 class="font-semibold text-base lg:text-xl mb-2">Jump-start your transformation journey now</h1>
+                    <h1 class="text-[#797979] text-xs lg:text-sm">We provide anything you could ask for- uniquely end-to-end solution provider as your trusted partner.</h1>
+                </div>
+            </div>
+            <x-footer/>
 
 
 
@@ -436,6 +481,36 @@
                         slidesPerView: 4,
                         spaceBetween: 40
                     }
+                },
+
+
+
+            });
+            var swiper = new Swiper(".mySwiper1", {
+                slidesPerView: 2,
+                spaceBetween: 10,
+
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+                breakpoints: {
+
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    }
+
                 },
 
 

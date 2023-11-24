@@ -5,8 +5,13 @@
 @tailwind utilities;
 
 :root {
-    --swiper-navigation-color: gray;
-    --swiper-navigation-size: 20px;
+    --swiper-navigation-color: black;
+    --swiper-navigation-fontWeight: 100;
+    --swiper-navigation-size: 100px;
     --swiper-pagination-color: green;
 
+  }
+
+  swiper-container::part(button-next) {
+    font-weight:100 !important;
   }
