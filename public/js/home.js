@@ -7,20 +7,7 @@ button.addEventListener("click",()=>{
     content.classList.toggle("hidden");
 })
 
-// button.addEventListener('click', () => {
-//     if (content.hidden) {
-//         content.hidden = false;
-//         setTimeout(() => {
-//             content.classList.add('is-collapsed');
-//         }, 100);
-//     } else {
-//         content.classList.remove('is-collapsed');
 
-//         setTimeout(() => {
-//             content.hidden = true;
-//         }, 1000);
-//     }
-// });
 
 
 

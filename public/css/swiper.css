@@ -16,6 +16,11 @@
     height:550px;
 }
 
+.mySwiper3{
+    width:100%;
+    height:500px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
 
@@ -28,6 +33,7 @@
 
 
 }
+
 
 
 

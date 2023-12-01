@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Partner;
 use App\Repositories\Interface\ParnterInterface;
+use App\Repositories\Query\PartnerQuery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -11,8 +12,7 @@ class PartnerController extends Controller
 {
 
     private $parnter_repository;
-
-    public function __construct(ParnterInterface $parnter_repository)
+    public function __construct(PartnerQuery $parnter_repository)
     {
         $this->parnter_repository = $parnter_repository;
     }
@@ -23,7 +23,7 @@ class PartnerController extends Controller
     {
         $parnters = $this->parnter_repository->index();
 
-        return view('backend.partner.index', compact('parnters'));
+        return view('pages/partner');
     }
 
     /**

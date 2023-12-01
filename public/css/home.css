@@ -2,7 +2,6 @@
 .content {
     overflow: hidden;
     height: auto;
-    
     width: 100%;
     transition: max-height 1s linear;
 }
