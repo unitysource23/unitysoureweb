@@ -122,16 +122,44 @@
             </div>
         </div>
         {{--  Choose from 4 Partner Type   --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             <div class="bg-[#444B8C] text-white text-center">
                 <div class="px-4 py-8">
 
-                <h1 class="mb-10">Affiliates</h1>
-                <p class="">
+                <h1 class="mb-10 text-lg font-semibold">Affiliates</h1>
+                <p class="px-10 font-extralight">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet architecto pariatur provident distinctio excepturi quas eos iusto. Vitae esse eos nulla quam, sunt voluptates quaerat. Maxime perferendis voluptatem sed.
                 </p>
                 </div>
             </div>
+            <div class="bg-[#FC75B1] text-white text-center">
+                <div class="px-4 py-8">
+
+                <h1 class="mb-10 text-lg font-semibold">Resellers</h1>
+                <p class="px-10 font-extralight">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet architecto pariatur provident distinctio excepturi quas eos iusto. Vitae esse eos nulla quam, sunt voluptates quaerat. Maxime perferendis voluptatem sed.
+                </p>
+                </div>
+            </div>
+            <div class="bg-[#FEB236] text-white text-center">
+                <div class="px-4 py-8">
+
+                <h1 class="mb-10 text-lg font-semibold">Payroll Outsourcing</h1>
+                <p class="px-10 font-extralight">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet architecto pariatur provident distinctio excepturi quas eos iusto. Vitae esse eos nulla quam, sunt voluptates quaerat. Maxime perferendis voluptatem sed.
+                </p>
+                </div>
+            </div>
+            <div class="bg-[#00BBB3] text-white text-center">
+                <div class="px-4 py-8">
+
+                <h1 class="mb-10 text-lg font-semibold">App Partners</h1>
+                <p class="px-10 font-extralight">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet architecto pariatur provident distinctio excepturi quas eos iusto. Vitae esse eos nulla quam, sunt voluptates quaerat. Maxime perferendis voluptatem sed.
+                </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
