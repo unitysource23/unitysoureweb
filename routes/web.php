@@ -20,17 +20,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('/pages/home');
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('/pages/about_us');
-});
+})->name('about_us');
 
 
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::prefix('app_settings')->group(function () {
