@@ -3,11 +3,11 @@
       <div class="flex items-center justify-between">
           <div class="flex items-center gap-3">
               {{-- <img src="{{ asset('images/fav_icon.png') }}" class="w-12" alt=""> --}}
-              <h1 class="text-md md:text-lg font-extrabold text-primary ml-10">Unity Source Logo</h1>
+              <h1 class="text-md md:text-2xl font-extrabold text-primary ml-10">Unity Source Logo</h1>
           </div>
           <div class=" hidden sm:block ">
               <div class="flex items-center gap-5">
-                  <ul class="flex items-center gap-10 text-primary font-medium">
+                  <ul class="flex items-center gap-10 text-primary text-base font-normal">
                       <li>
                           <a href="{{ route('home') }}">Home</a>
                       </li>
@@ -21,11 +21,16 @@
                           <a href="">Contact</a>
                       </li>
                   </ul>
-                  <div class="border px-8 py-0 rounded-md" id="language-btn">
-                      <h1 class="text-primary text-sm md:text-base cursor-pointer">Eng
-                          <span><i class=" text-primary fa-solid fa-angle-down"></i></span>
-                      </h1>
+                  <div class="border border-primary w-[120px] px-5 py-0 rounded-md" id="language-btn">
+                      <div class="grid grid-cols-2 items-center">
+                          <h1 class="text-primary text-sm md:text-base cursor-pointer">
+                              Eng
+                          </h1>
+                          <span class="justify-self-end"><i
+                                  class="text-primary fa-solid fa-angle-down cursor-pointer"></i></span>
+                      </div>
                   </div>
+
               </div>
           </div>
           <div class="sm:hidden" id="menuButton">
