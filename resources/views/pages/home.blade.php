@@ -10,8 +10,9 @@
         <div class="mx-0 xl:h-screen mt-5">
             <div class="flex flex-row justify-between items-center">
                 <!-- First Image Section -->
-                <div class="w-[1500px] h-auto my-10">
-                    <img src="{{ asset('images/home_section.png') }}" class="w-full h-auto" alt="">
+                <div class="w-[1500px] h-[600px] mt-0">
+                    <img src="{{ asset('images/dashboard.png') }}" class="w-full h-full ml-[-75px]" alt="">
+                    {{-- <div class="w-[800px] h-[600px] bg-gray-500">img</div> --}}
                 </div>
                 <!-- Text Section -->
                 <div class="flex justify-start items-start text-right px-20 pb-20">
@@ -21,18 +22,14 @@
                             View our services and apps
                         </button>
                         <h1 class="text-xl lg:text-7xl font-bold">
-                            Your <span class="text-primary">All in One</span>
+                            we make <span class="text-primary">all of your business </span>
                         </h1>
-                        <h1 class="text-xl lg:text-6xl font-extrabold mt-3 mb-5">IT Solutions</h1>
-                        <p class="text-paraColor text-lg lg:text-xl mb-10">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quod debitis velit aliquid
-                            accusamus culpa quidem,
-                        </p>
+                        <h1 class="text-xl lg:text-7xl font-bold mb-10">needs</h1>
                     </div>
                 </div>
             </div>
             <!-- Background Image Section -->
-            <div class="m-w-full h-screen">
+            <div class="m-w-full h-screen mt-20">
                 <img src="{{ asset('images/bg-image.png') }}" class="absolute w-full h-auto object-cover mt-[-300px]"
                     alt="">
             </div>
@@ -66,8 +63,7 @@
                             class="font-bold text-xl md:text-xl lg:text-3xl bg-gradient-to-r from-primary to-[#39c457] text-white">Unity
                             Source to build their business
                         </span>
-                        <div style="margin-top: 170px;"
-                            class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[170px]">
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
                                 <h1 class="font-bold text-lg lg:text-3xl">IT Solutions</h1>

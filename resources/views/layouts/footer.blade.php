@@ -4,12 +4,12 @@
             <div>
                 <h1 class="font-semibold mb-3">Address</h1>
                 <div class="font-extralight text-sm flex flex-col">
-                    <h1>Room 24, 7rd floor</h1>
+                    <h1>Room No.(7-A), (7) floor</h1>
                     <h1>Mawyawadi Condo</h1>
                 </div>
                 <div class="font-extralight text-sm flex flex-col mt-3">
-                    <h1>8 Miles, Yangon</h1>
-                    <h1>Myanmar</h1>
+                    <h1>8 Mile, Mayangone Township,</h1>
+                    <h1>Yangon</h1>
                 </div>
             </div>
 
