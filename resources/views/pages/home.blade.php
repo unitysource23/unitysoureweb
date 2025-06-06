@@ -17,10 +17,6 @@
                 <!-- Text Section -->
                 <div class="flex justify-start items-start text-right px-20 pb-20">
                     <div>
-                        <button
-                            class="text-primary text-xl lg:text-xl mb-2 outline outline-1 outline-primary rounded-full px-3 lg:px-6 py-1 lg:py-2 tracking-wide font-extrabold">
-                            View our services and apps
-                        </button>
                         <h1 class="text-xl lg:text-7xl font-bold">
                             we make <span class="text-primary">all of your business </span>
                         </h1>
