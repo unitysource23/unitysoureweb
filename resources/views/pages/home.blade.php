@@ -18,9 +18,9 @@
                 <div class="flex justify-start items-start text-right px-20 pb-20">
                     <div>
                         <h1 class="text-xl lg:text-7xl font-bold">
-                            we make <span class="text-primary">all of your business </span>
+                            we make <span class="text-primary">all of your business </span> needs
                         </h1>
-                        <h1 class="text-xl lg:text-7xl font-bold mb-10">needs</h1>
+                        <h1 class="text-xl lg:text-7xl font-bold mb-10"></h1>
                     </div>
                 </div>
             </div>
