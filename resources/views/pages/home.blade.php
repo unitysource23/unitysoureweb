@@ -11,14 +11,14 @@
             <div class="flex flex-row justify-between items-center">
                 <!-- First Image Section -->
                 <div class="w-[1500px] h-[600px] mt-0">
-                    <img src="{{ asset('images/dashboard.png') }}" class="w-full h-full ml-[-75px]" alt="">
+                    <img src="{{ asset('images/dashboard.png') }}" class="w-full h-full ml-[-10px]" alt="">
                     {{-- <div class="w-[800px] h-[600px] bg-gray-500">img</div> --}}
                 </div>
                 <!-- Text Section -->
-                <div class="flex justify-start items-start text-right px-20 pb-20">
+                <div class="flex justify-start items-start text-right px-20 pb-20 mt-[-150px]">
                     <div>
-                        <h1 class="text-xl lg:text-7xl font-bold">
-                            we make <span class="text-primary">all of your business </span> needs
+                        <h1 class="text-base lg:text-6xl font-bold">
+                            We make <span class="text-primary">all of your business </span> needs
                         </h1>
                         <h1 class="text-xl lg:text-7xl font-bold mb-10"></h1>
                     </div>
