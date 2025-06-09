@@ -36,7 +36,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-start items-start">
                 <div class="col-span-1 md:col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('images/country-map.png') }}" class="h-[650px]  mx-auto" alt="">
+                        <img src="{{ asset('images/country-map.png') }}" class="h-[650px] mx-auto" alt="">
                         <img src="{{ asset('images/greenpeople.png') }}"
                             class="absolute top-60 md:top-44 lg:top-60 right-20 md:right-14   lg:right-20 xl:right-32 w-10"
                             alt="">
@@ -95,19 +95,17 @@
         </div>
 
         {{--  Smart Life   --}}
-        <div class="mx-10 xl:h-screen mt-20">
+        <div class="mx-10 xl:h-screen mt-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 <div class="relative">
-                    <img src="{{ asset('images/Ellipse 12.png') }}" alt="">
-                    <div
-                        class="bg-gray-300 w-full h-full xl:w-[600px] xl:h-[420px] rounded-xl shadow-xl absolute top-36 left-[50px]">
-                    </div>
+                    <img src="{{ asset('images/Ellipse 12.png') }}" alt="" class="mt-20">
+
                     <img src="{{ asset('images/smart-life.png') }}"
-                        class="absolute top-[158px] w-[585px] h-[400px] left-[57px]" alt="">
+                        class="absolute top-[158px] w-[485px] h-[300px] left-[17px] mt-10" alt="">
                     <div class="flex items-center gap-2 absolute top-[147px] left-[60px]">
+                        {{-- <div class="bg-gray-500 w-2 h-2 rounded-full"></div>
                         <div class="bg-gray-500 w-2 h-2 rounded-full"></div>
-                        <div class="bg-gray-500 w-2 h-2 rounded-full"></div>
-                        <div class="bg-gray-500 w-2 h-2 rounded-full"></div>
+                        <div class="bg-gray-500 w-2 h-2 rounded-full"></div> --}}
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -128,8 +126,6 @@
                             smoother operations, improved financial management,
                             and enhanced customer satisfaction.
                         </h1>
-                        <a href="" class="text-primary font-semibold">Find Out More <i
-                                class="fa-solid fa-arrow-right-long ml-2"></i></a>
                     </div>
 
                 </div>
@@ -142,11 +138,11 @@
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="col-span-1 flex items-center">
                     <div class="text-center lg:text-right">
-                        <h1 class="font-semibold text-lg lg:text-4xl">Fast Move</h1>
-                        <h1 class="font-semibold text-primary text-base lg:text-2xl mb-5">
+                        <h1 class="font-semibold text-lg lg:text-4xl text-left">Fast Move</h1>
+                        <h1 class="font-semibold text-primary text-base lg:text-2xl mb-5 text-left">
                             Distribution System Software
                         </h1>
-                        <h1 class="w-[550px] text-paraColor text-sm md:text-base text-right ml-[240px] mb-5">
+                        <h1 class="w-[550px] text-paraColor text-sm md:text-base text-left mb-5">
                             Our Software is a tool that enables businesses to efficiently manage their supply chain
                             operations. It assists in automating tasks like inventory tracking, order processing,
                             and logistics management. This software enhances the distribution process by optimizing
@@ -154,8 +150,6 @@
                             accuracy. Its a crucial asset for businesses aiming to streamline their distribution
                             networks, reduce costs, and enhance customer satisfaction.
                         </h1>
-                        <a href="" class="text-primary font-semibold"> <i
-                                class="fa-solid fa-arrow-left-long mr-2"></i>Find Out More</a>
                     </div>
                 </div>
                 <div>
@@ -253,7 +247,7 @@
             </div>
         </div>
 
-        <div class="bg-[#DEFFD8] mb-10 mt-[-200px]">
+        <div class="bg-[#DEFFD8] mb-10" style="margin-top: 5px">
             <div class="text-center py-10">
                 <h1 class="font-semibold text-base lg:text-xl mb-2">Jump-start your transformation journey now</h1>
                 <h1 class="text-[#797979] text-xs lg:text-sm">We provide anything you could ask for- uniquely

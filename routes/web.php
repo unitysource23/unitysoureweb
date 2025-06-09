@@ -112,3 +112,11 @@ Route::prefix('client')->group(function () {
         Route::put('/{client}', 'update')->name('client-update');
     });
 });
+
+Route::get('lang/{locale}', function ($locale) {
+    if (in_array($locale, ['en', 'my'])) {
+        session(['locale' => $locale]);
+        app()->setLocale($locale);
+    }
+    return redirect()->back();
+})->name('lang.switch');

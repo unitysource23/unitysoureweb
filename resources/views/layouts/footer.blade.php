@@ -1,67 +1,39 @@
-<div class="bg-primary text-white">
-    <div class="mx-5 lg:mx-10 py-10 ">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-5">
-            <div>
-                <h1 class="font-semibold mb-3">Address</h1>
-                <div class="font-extralight text-sm flex flex-col">
-                    <h1>Room No.(7-A), (7) floor</h1>
-                    <h1>Mawyawadi Condo</h1>
-                </div>
-                <div class="font-extralight text-sm flex flex-col mt-3">
-                    <h1>8 Mile, Mayangone Township,</h1>
-                    <h1>Yangon</h1>
-                </div>
-            </div>
+<footer class="bg-green-700 text-white text-sm px-6 py-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Address -->
+        <div>
+            <h4 class="font-semibold mb-1">Address</h4>
+            <p>Room No.(7–A), (7) floor<br>
+            Mawyawadi Condo<br>
+            8 Mile, Mayangone, Yangon</p>
+        </div>
 
-            <div>
-                <h1 class="font-semibold mb-3">Company</h1>
-                <div class="font-extralight text-sm flex flex-col">
-                    <h1>About Us</h1>
-                    <h1>Partner with us</h1>
-                    <h1>Careers</h1>
-                </div>
-            </div>
-            <div>
-                <h1 class="font-semibold mb-3">Get Started</h1>
-                <div class="font-extralight text-sm flex flex-col">
-                    <h1>Pricing</h1>
-                    <h1>Support</h1>
-                </div>
-            </div>
-            <div>
-                <h1 class="font-semibold mb-3">Logo Here</h1>
-                <div class="flex items-center gap-5">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <div>
-                <h1 class="font-semibold mb-3">Contact</h1>
-                <div class="font-extralight text-sm flex flex-col">
-                    <div class="flex flex-row gap-2">
-                        <h1>Marketing</h1>
-                        <h1>+959 123456789</h1>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <h1>Sale</h1>
-                        <h1>+959 123456789</h1>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <h1>Support </h1>
-                        <h1>+959 123456789</h1>
-                    </div>
-                </div>
-                <div class="font-extralight text-sm flex flex-col mt-3">
-                    <h1 class="text-xs">Support Hours :</h1>
-                    <h1>Mon to Fri, 9 am - 5 pm GTM+8</h1>
-                </div>
-                <div class="font-extralight text-sm flex flex-row mt-3 gap-2">
-                    <h1>Billing :</h1>
-                    <h1 class="font-semibold">finance@unity.com</h1>
-                </div>
-            </div>
+        <!-- Contact -->
+        <div>
+            <h4 class="font-semibold mb-1">Contact</h4>
+            <p>Marketing: +959 123456789<br>
+            Sales: +959 123456789<br>
+            Support: +959 123456789</p>
+            <p class="mt-2">Support Hours: Mon–Fri, 9am–5pm (GMT+8)</p>
+            <p class="mt-1">Billing: <a href="mailto:finance@unity.com" class="underline">finance@unity.com</a></p>
+        </div>
 
+        <!-- Company -->
+        <div>
+            <h4 class="font-semibold mb-1">Company</h4>
+            <ul class="space-y-1">
+                <li><a href="{{ route('about_us') }}">About Us</a></li>
+                <li><a href="{{ route('partner') }}">Partner with Us</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+        <!-- Social or Logo -->
+        <div>
+            <h4 class="font-semibold mb-1">Follow Us</h4>
+            <a href="#" class="inline-block text-white hover:text-gray-200">
+                <i class="fab fa-facebook text-lg"></i>
+            </a>
         </div>
     </div>
-</div>
+</footer>

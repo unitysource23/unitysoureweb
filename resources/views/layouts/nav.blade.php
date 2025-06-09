@@ -21,13 +21,12 @@
                           <a href="">Contact</a>
                       </li>
                   </ul>
-                  <div class="border border-primary w-[120px] px-5 py-0 rounded-md" id="language-btn">
+                  <div class="border border-primary w-[120px] px-5 py-0 rounded-md cursor-pointer language-toggle">
                       <div class="grid grid-cols-2 items-center">
-                          <h1 class="text-primary text-sm md:text-base cursor-pointer">
-                              Eng
-                          </h1>
-                          <span class="justify-self-end"><i
-                                  class="text-primary fa-solid fa-angle-down cursor-pointer"></i></span>
+                          <h1 class="text-primary text-sm md:text-base cursor-pointer">Eng</h1>
+                          <span class="justify-self-end">
+                              <i class="text-primary fa-solid fa-angle-down cursor-pointer"></i>
+                          </span>
                       </div>
                   </div>
 
@@ -53,27 +52,44 @@
                       <a href="">Contact</a>
                   </li>
               </ul>
-              <div class="border px-2 w-20 py-1 rounded-md">
-                  <h1 class="text-paraColor text-sm md:text-base font-medium">English <span><i
-                              class="fa-solid fa-angle-down"></i></span></h1>
+              <div class="border px-2 w-20 py-1 rounded-md cursor-pointer language-toggle">
+                  <h1 class="text-paraColor text-sm md:text-base font-medium">
+                      {{ __('messages.language') }} <span><i class="fa-solid fa-angle-down"></i></span>
+                  </h1>
               </div>
           </div>
       </div>
   </nav>
 
   {{--  language dropdown start   --}}
-  <div class=" absolute top-16   right-5">
+  <div class="absolute top-16 right-5 z-[9999]">
       <div id="language-menu"
-          class="bg-white hidden   text-sm rounded-lg text-paraColor md:text-base  py-2 shadow-md w-[150px]">
-          <div class="px-3  border-b py-2">
-              <input type="radio" name="" class="hidden" id="">
-              <label for="" class="font-semibold">English</label>
+          class="bg-white hidden text-sm rounded-lg text-paraColor md:text-base py-2 shadow-md w-[150px]">
+          <div class="px-3 border-b py-2">
+              <a href="{{ route('lang.switch', 'en') }}" class="font-semibold block cursor-pointer">English</a>
           </div>
           <div class="px-3 py-2">
-              <input type="radio" name="" class="hidden" id="">
-              <label for="" class="font-semibold">Myanmar</label>
+              <a href="{{ route('lang.switch', 'my') }}" class="font-semibold block cursor-pointer">မြန်မာ</a>
           </div>
       </div>
-
   </div>
   {{--  language dropdown end  --}}
+
+  <script>
+      const toggles = document.querySelectorAll('.language-toggle');
+      const menu = document.getElementById('language-menu');
+
+      toggles.forEach(toggle => {
+          toggle.addEventListener('click', (e) => {
+              e.stopPropagation(); // prevent click from bubbling up
+              menu.classList.toggle('hidden');
+          });
+      });
+
+      document.addEventListener('click', (e) => {
+          const isClickOnToggle = [...toggles].some(toggle => toggle.contains(e.target));
+          if (!isClickOnToggle && !menu.contains(e.target)) {
+              menu.classList.add('hidden');
+          }
+      });
+  </script>

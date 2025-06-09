@@ -16,10 +16,10 @@
                 <div class="flex items-center ">
                     <div>
                         <div class="font-bold text-4xl mb-5">
-                            <span class="text-primary">Our</span>
-                            <span class="text-[#FCA139]">Successful </span>
-                            <span class="text-primary">Partners'</span>
-                            <h1 class="text-[#D889E1]">Business Industry</h1>
+                            <span class="text-black">Our</span>
+                            <span class="text-black">Successful </span>
+                            <span class="text-black">Partners'</span>
+                            <h1 class="text-black">Business Industry</h1>
                         </div>
                         <ul class="list-inside list-custom-disc grid grid-cols-2 gap-4 text-primary">
                             <li class=" text-[#898989] ">E-commerce</li>
