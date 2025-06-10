@@ -2,11 +2,11 @@
   <nav class=" py-4 px-4 bg-white md:px-10 text-sm sticky top-0 shadow-sm z-[99999] ">
       <div class="flex items-center justify-between h-9 px-10">
           <div style="display: flex; justify-content: flex-end; align-items: center; padding-right: 50px;">
-            <img src="{{ asset('images/unityLogo.png') }}" style="height: 65px; width: auto;" alt="Unity Logo"> 
+            <img src="{{ asset('images/unityLogo.png') }}" style="height: 65px; width: auto;" alt="Unity Logo">
           </div>
           <div class=" hidden sm:block ">
               <div class="flex items-center gap-5">
-                  <ul class="flex items-center gap-10 text-black text-base font-normal">
+                  <ul class="flex items-center gap-10 text-black text-base font-medium">
                       <li>
                           <a href="{{ route('home') }}">Home</a>
                       </li>
@@ -17,7 +17,7 @@
                           <a href="{{ route('about_us') }}">About</a>
                       </li>
                   </ul>
-                  
+
 
               </div>
           </div>
@@ -27,7 +27,7 @@
       </div>
       <div class=" hidden absolute top-[100%] w-[100%] left-0 z-[9999] bg-white shadow-md" id="additionalFilter">
           <div class="flex flex-col mt-5 gap-5 px-3 pb-3">
-              <ul class="flex flex-col  gap-10 text-primary font-semibold">
+              <ul class="flex flex-col  gap-10 text-black font-semibold">
                   <li>
                       <a href="{{ route('home') }}">Home</a>
                   </li>
@@ -38,7 +38,7 @@
                       <a href="{{ route('about_us') }}">About</a>
                   </li>
               </ul>
-              
+
           </div>
       </div>
   </nav>
