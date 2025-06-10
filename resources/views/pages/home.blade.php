@@ -7,32 +7,52 @@
 
     <section class="home ">
         {{--  hero  start   --}}
-        <div class="mx-0 xl:h-screen mt-5">
-            <div class="flex flex-row justify-between items-center">
-                <!-- First Image Section -->
-                <div class="w-[1500px] h-[600px] mt-0">
-                    <img src="{{ asset('images/dashboard.png') }}" class="w-full h-full ml-[-10px]" alt="">
-                    {{-- <div class="w-[800px] h-[600px] bg-gray-500">img</div> --}}
-                </div>
-                <!-- Text Section -->
-                <div class="flex justify-start items-start text-right px-20 pb-20 mt-[-150px]">
-                    <div>
-                        <h1 class="text-base lg:text-6xl font-bold">
-                            We make <span class="text-primary">all of your business </span> needs
-                        </h1>
-                        <h1 class="text-xl lg:text-7xl font-bold mb-10"></h1>
+        <div class="w-full mt-5">
+            <!-- Content Section -->
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10 w-full max-w-[1300px] mx-auto px-4 mb-0">
+                <!-- Logo Section -->
+                <div class="flex flex-row flex-wrap justify-center gap-6 w-full lg:w-1/2 mt-6 lg:mb-0">
+                <!-- logos -->
+                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
+                        <img src="images/d1.jpg" class="w-[100px]" alt="">
+                    </div>
+                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
+                        <img src="images/d2.jpg" class="w-[100px]" alt="">
+                    </div>
+                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
+                        <img src="images/d3.jpg" class="w-[100px]" alt="">
+                    </div>
+                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
+                        <img src="images/d4.jpg" class="w-[100px]" alt="">
+                    </div>
+                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
+                        <img src="images/d5.png" class="w-[130px]" alt="">
+                    </div>
+                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
+                        <img src="images/d6.png" class="w-[100px]" alt="">
+                    </div>
+                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
+                        <img src="images/d7.png" class="w-[100px]" alt="">
                     </div>
                 </div>
+
+                <!-- Text Section -->
+                <div class="flex flex-col pb-10 mb-20 items-start text-right w-full lg:w-1/2 px-4">
+                <h1 class="text-2xl lg:text-5xl font-bold leading-tight">
+                    We make all of your business needs
+                </h1>
+                </div>
             </div>
+
             <!-- Background Image Section -->
-            <div class="m-w-full h-screen mt-20">
-                <img src="{{ asset('images/bg-image.png') }}" class="absolute w-full h-auto object-cover mt-[-300px]"
-                    alt="">
+            <div class="w-full mt-[-90px]">
+                <img src="{{ asset('images/bg-image.png') }}" class="w-full h-auto object-cover" alt="Background Image">
             </div>
         </div>
 
+
         {{--  map two start   --}}
-        <div class="mx-10 xl:h-screen mt-20" style="margin-top: 250px;">
+        <div class="mx-10 xl:h-screen mt-20">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-start items-start">
                 <div class="col-span-1 md:col-span-1">
                     <div class="relative">
@@ -59,33 +79,22 @@
                             class="font-bold text-xl md:text-xl lg:text-3xl bg-gradient-to-r from-primary to-[#39c457] text-white">Unity
                             Source to build their business
                         </span>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[170px]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[70px]">
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
                                 <h1 class="font-bold text-lg lg:text-3xl">IT Solutions</h1>
-                                <h1 class="text-paraColor text-sm md:text-base">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Esse, ea.</h1>
                             </div>
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">Design Solutions</h1>
-                                <h1 class="text-paraColor text-sm md:text-base">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit.
-                                    Esse, ea.</h1>
+                                <h1 class="font-bold text-lg lg:text-3xl">Business Solutions</h1>
                             </div>
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">Consultancy</h1>
-                                <h1 class="text-paraColor text-sm md:text-base">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit.
-                                    Esse, ea.</h1>
+                                <h1 class="font-bold text-lg lg:text-3xl">HR Solutions</h1>
                             </div>
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">CMS</h1>
-                                <h1 class="text-paraColor text-sm md:text-base">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit.
-                                    Esse, ea.</h1>
+                                <h1 class="font-bold text-lg lg:text-3xl">Service Solutions</h1>
                             </div>
                         </div>
                     </div>
@@ -94,160 +103,127 @@
             </div>
         </div>
 
-        {{--  Smart Life   --}}
-        <div class="mx-10 xl:h-screen mt-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <div class="relative">
-                    <img src="{{ asset('images/Ellipse 12.png') }}" alt="" class="mt-20">
-
-                    <img src="{{ asset('images/smart-life.png') }}"
-                        class="absolute top-[158px] w-[485px] h-[300px] left-[17px] mt-10" alt="">
-                    <div class="flex items-center gap-2 absolute top-[147px] left-[60px]">
-                        {{-- <div class="bg-gray-500 w-2 h-2 rounded-full"></div>
-                        <div class="bg-gray-500 w-2 h-2 rounded-full"></div>
-                        <div class="bg-gray-500 w-2 h-2 rounded-full"></div> --}}
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <div class="text-center lg:text-left">
-                        <h1 class="font-semibold text-lg lg:text-4xl">Smart Life</h1>
-                        <h1 class="font-semibold text-primary text-base lg:text-2xl mb-5">Hire Purchase Services
-                        </h1>
-                        <h1 class="w-[500px] text-paraColor text-sm md:text-base text-left mb-5">
-                            Our platform offers a effective solution to effortlessly
-                            manage customer payments and monitor installment
-                            plans. By providing businesses with powerful solution,
-                            we simplify the process of keeping tabs on customer
-                            payments and overseeing installment schedules.
-                            Our user-friendly interface enhances operational
-                            efficiency, allowing organizations to optimize their
-                            workflows and achieve the best possible outcomes.
-                            With our innovative platform, businesses can experience
-                            smoother operations, improved financial management,
-                            and enhanced customer satisfaction.
-                        </h1>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        {{--  Fast Move  --}}
-        <div class="mx-10 mt-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2">
-                <div class="col-span-1 flex items-center">
-                    <div class="text-center lg:text-right">
-                        <h1 class="font-semibold text-lg lg:text-4xl text-left">Fast Move</h1>
-                        <h1 class="font-semibold text-primary text-base lg:text-2xl mb-5 text-left">
-                            Distribution System Software
-                        </h1>
-                        <h1 class="w-[550px] text-paraColor text-sm md:text-base text-left mb-5">
-                            Our Software is a tool that enables businesses to efficiently manage their supply chain
-                            operations. It assists in automating tasks like inventory tracking, order processing,
-                            and logistics management. This software enhances the distribution process by optimizing
-                            inventory levels, minimizing order fulfillment time, and improving overall operational
-                            accuracy. Its a crucial asset for businesses aiming to streamline their distribution
-                            networks, reduce costs, and enhance customer satisfaction.
-                        </h1>
-                    </div>
-                </div>
-                <div>
-                    <img src="{{ asset('images/Fast Move.png') }}" alt="">
-                </div>
-            </div>
-        </div>
-
         {{-- Our Partner start   --}}
-        <div class="mx-5 lg:mx-10 xl:mx-20 mt-20">
-            <h1 class="text-center font-bold text-xl lg:text-4xl mb-7 ">Our Partners</h1>
-            <div class="flex justify-center items-center text-center flex-row gap-10">
-                <div class="bg-black w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/ten.png" class="w-[130px]" alt="">
+        <div class="mx-5 lg:mx-10 xl:mx-20 mt-10">
+            <h1 class="text-center font-bold text-xl lg:text-4xl mb-7 ">Our Clients</h1>
+            <div class="flex justify-center items-center text-center flex-row gap-10 mt-10">
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c1.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/microsoft.png" alt="">
+                    <img src="images/c2.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/red-hat.png" class="w-[70px]" alt="">
-                    <h1 class="text-black font-black text-xl">Red Hat</h1>
-                </div>
-                <div class="bg-black w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/ten.png" class="w-[130px]" alt="">
+                    <img src="images/c3.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/microsoft.png" alt="">
+                    <img src="images/c4.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/red-hat.png" class="w-[70px]" alt="">
-                    <h1 class="text-black font-black text-xl">Red Hat</h1>
+                    <img src="images/c5.jpg" class="w-[130px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c6.jpg" class="w-[100px]" alt="">
                 </div>
             </div>
-            <div class="flex justify-center items-center text-center flex-row gap-10 mt-8 mr-[200px]">
-                <div class="bg-black w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/ten.png" class="w-[130px]" alt="">
+            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c7.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/microsoft.png" alt="">
+                    <img src="images/c8.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/red-hat.png" class="w-[70px]" alt="">
-                    <h1 class="text-black font-black text-xl">Red Hat</h1>
-                </div>
-                <div class="bg-black w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/ten.png" class="w-[130px]" alt="">
+                    <img src="images/c9.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/microsoft.png" alt="">
+                    <img src="images/c10.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/red-hat.png" class="w-[70px]" alt="">
-                    <h1 class="text-black font-black text-xl">Red Hat</h1>
+                    <img src="images/c11.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c12.jpg" class="w-[100px]" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c13.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c14.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c15.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c16.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c17.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c18.jpg" class="w-[80px]" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c19.jpg" class="w-[80px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c20.jpg" class="w-[80px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c21.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c22.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c23.png" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c24.jpg" class="w-[100px]" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c25.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c26.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c27.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c28.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c29.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c30.jpg" class="w-[100px]" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c31.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c32.jpg" class="w-[100px]" alt="">
+                </div>
+                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                    <img src="images/c33.jpg" class="w-[100px]" alt="">
                 </div>
             </div>
 
-            <div class="text-center mt-5">
-                <a href="" class=" text-primary">
-                    Expore More <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+            <div class="text-center mt-10 mb-10">
             </div>
 
         </div>
 
-        {{--  Our Client start   --}}
-        <div class="mx-5 lg:mx-10 mt-20 h-screen">
-            <h1 class="text-center font-bold text-xl lg:text-4xl mb-7">Our Clients</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="flex justify-center items-center text-center flex-col">
-                    <img src="images/clients_sample_1.png" alt="Client 1" class="w-[300px] h-auto mx-auto mb-4">
-                    <p class="text-paraColor text-lg lg:text-lg w-[300px]">
-                        Lorem ipsum dolor sit amet consectetur. Vitae enim ipsum nibh auctor varius volutpat consequat
-                        vitae.
-                        Donec at mauris tempor et turpis tellus pharetra.
-                    </p>
-                </div>
-
-                <div class="flex justify-center items-center text-center flex-col">
-                    <img src="images/clients_sample_2.png" alt="Client 2" class="w-[300px] h-auto mx-auto mb-4">
-                    <p class="text-paraColor text-lg lg:text-lg w-[300px]">
-                        Lorem ipsum dolor sit amet consectetur. Vitae enim ipsum nibh auctor varius volutpat consequat
-                        vitae.
-                        Donec at mauris tempor et turpis tellus pharetra.
-                    </p>
-                </div>
-
-                <div class="flex justify-center items-center text-center flex-col">
-                    <img src="images/clients_sample_3.png" alt="Client 3" class="w-[300px] h-auto mx-auto mb-4">
-                    <p class="text-paraColor text-lg lg:text-lg w-[300px]">
-                        Lorem ipsum dolor sit amet consectetur. Vitae enim ipsum nibh auctor varius volutpat consequat
-                        vitae.
-                        Donec at mauris tempor et turpis tellus pharetra.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-[#DEFFD8] mb-10" style="margin-top: 5px">
+        <div class="bg-[#DEFFD8] mt-30" >
             <div class="text-center py-10">
                 <h1 class="font-semibold text-base lg:text-xl mb-2">Jump-start your transformation journey now</h1>
                 <h1 class="text-[#797979] text-xs lg:text-sm">We provide anything you could ask for- uniquely
