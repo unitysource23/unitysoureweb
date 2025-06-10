@@ -13,7 +13,7 @@
 
         {{--  mission vision start   --}}
 
-        <div class="relative  mx-auto w-full lg:w-3/4  mt-10 lg:mt-20  ">
+        <div class="relative  mx-auto w-full lg:w-3/4  mt-10 lg:mt-20 ">
             <img src="{{ asset('images/mission.png') }}" class="" alt="">
             <div
                 class="bg-white absolute w-20 -top-4 left-8  md:-top-3 md:left-12 lg:-top-3 lg:left-12 xl:-top-2 xl:left-24 md:w-36 text-center py-1 md:py-4 font-semibold text-lg text-[#EDBB30]">
@@ -30,36 +30,44 @@
 
             <h1
                 class="w-[100px] absolute top-36 left-3 md:w-[150px] md:top-72  md:left-10 lg:w-[180px] lg:top-80 lg:left-10 xl:top-96 xl:left-16 text-xs md:text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore quo repellendus eaque nam
-                error, numquam voluptatum! Modi, ex id! Sed, sint
+                <ul>
+                    <li>It must be easy and simple to use for users.</li>
+                    <li>It must be fast, smooth, and good for users.</li>
+                    <li>It must be up to date with the times.</li>
+                </ul>
             </h1>
             <h1
                 class="w-[90px] absolute top-52 left-28 md:w-[150px] md:top-[400px]  md:left-60 lg:w-[180px] lg:top-[400px] lg:left-60 xl:top-[520px] xl:left-72 text-xs md:text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore quo repellendus eaque nam
-                error, numquam
-            </h1>
-            <h1
-                class="w-[90px] absolute top-40 left-[200px] md:w-[150px] md:top-[280px]  md:left-[420px] lg:w-[160px] lg:top-[280px] lg:left-[420px] xl:top-[370px] xl:left-[530px] text-xs md:text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore quo repellendus eaque nam
-                error, numquam
+                We must successfully establish ourselves as a trusted IT Solution Provider for businesses.
             </h1>
             <h1
                 class="w-[80px] absolute top-52 left-[300px] md:w-[150px] md:top-[400px]  md:left-[650px] lg:w-[180px] lg:top-[400px] lg:left-[580px] xl:top-[520px] xl:left-[700px] text-xs md:text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore quo repellendus eaque nam
-                error, numquam
+                If users have difficulties, they must help with full sympathy. Provide service to users with sincerity and
+                sincerity. Accountability to users must provide service with full responsibility.
             </h1>
         </div>
 
         {{--  meet the teamm start   --}}
         <div>
-            <div class=" bg-[#f2fcf5] pb-5 mt-48 lg:mt-36">
-                <h1 class="text-center font-bold text-lg  lg:text-2xl mb-5 py-4 ">Meet The Team</h1>
+            <div class="bg-[#f2fcf5] pb-10 mt-60 lg:mt-72 xl:mt-80">
+                <h1 class="text-center font-bold text-lg  lg:text-2xl mb-5 py-4 ">Our Professional Team</h1>
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide px-6">
                             <div class="relative group">
-                                <img src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwd29ya2VyfGVufDB8fDB8fHww"
-                                    class="h-[500px] w-full object-cover mx-auto " alt="">
+                                <img src="{{ asset('images/TM1.png') }}" class="h-[500px] w-full object-cover mx-auto "
+                                    alt="">
+                                <div
+                                    class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
+                                    <h1 class="text-white text-center mt-5">Ko Aung Naing Phyo</h1>
+                                    <h1 class="text-white text-center font-thin ">Senior Developer</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide px-6">
+                            <div class="relative group">
+                                <img src="{{ asset('images/TM2.png') }}" class="h-[500px] w-full object-cover mx-auto "
+                                    alt="">
                                 <div
                                     class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">U Win Maung</h1>
@@ -69,8 +77,8 @@
                         </div>
                         <div class="swiper-slide px-6">
                             <div class="relative group">
-                                <img src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwd29ya2VyfGVufDB8fDB8fHww"
-                                    class="h-[500px] w-full object-cover mx-auto " alt="">
+                                <img src="{{ asset('images/TM3.png') }}" class="h-[500px] w-full object-cover mx-auto "
+                                    alt="">
                                 <div
                                     class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">U Win Maung</h1>
@@ -80,8 +88,8 @@
                         </div>
                         <div class="swiper-slide px-6">
                             <div class="relative group">
-                                <img src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwd29ya2VyfGVufDB8fDB8fHww"
-                                    class="h-[500px] w-full object-cover mx-auto " alt="">
+                                <img src="{{ asset('images/TM4.png') }}" class="h-[500px] w-full object-cover mx-auto "
+                                    alt="">
                                 <div
                                     class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">U Win Maung</h1>
@@ -91,8 +99,19 @@
                         </div>
                         <div class="swiper-slide px-6">
                             <div class="relative group">
-                                <img src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwd29ya2VyfGVufDB8fDB8fHww"
-                                    class="h-[500px] w-full object-cover mx-auto " alt="">
+                                <img src="{{ asset('images/TM5.png') }}" class="h-[500px] w-full object-cover mx-auto "
+                                    alt="">
+                                <div
+                                    class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
+                                    <h1 class="text-white text-center mt-5">U Win Maung</h1>
+                                    <h1 class="text-white text-center font-thin ">Managing Director</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide px-6">
+                            <div class="relative group">
+                                <img src="{{ asset('images/TM6.png') }}" class="h-[500px] w-full object-cover mx-auto "
+                                    alt="">
                                 <div
                                     class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">U Win Maung</h1>
@@ -127,45 +146,56 @@
                 <h1 class="text-center font-bold text-lg lg:text-4xl py-10">How we build good to great
                     business
                 </h1>
-                <h1 class="text-center px-5 lg:px-32">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Blanditiis
-                    quibusdam ea dicta maxime non hic. Assumenda beatae excepturi, voluptatem odio corrupti
-                    mollitia!
-                    Quam quod tenetur ipsa dicta repellendus minus molestias.</h1>
             </div>
 
             <div style="background-image: url({{ asset('images/map.png') }})" class=" mt-48 h-[300px] bg-no-repeat w-full ">
-                <div class="relative grid grid-cols-1 ">
-                    <div class="absolute -top-28 left-10  lg:-top-10 md:left-10 xl:-top-24 xl:left-20">
-                        <img src="{{ asset('images/research.png') }}"
-                            class="w-[90px] md:w-[130px] lg:w-[180px] xl:w-auto mx-auto" alt="">
-                        <h1 class="font-semibold text-base md:text-xl xl:text-2xl text-center">Research</h1>
-                        <h1 class="text-sm md:text-base text-center">Research short para</h1>
+                <div class="relative grid grid-cols-1">
+                    <div class="absolute -top-20 left-4 md:left-8 lg:-top-6 xl:-top-16 xl:left-16 text-center">
+                        <div class="bg-white p-3 rounded-xl shadow-md w-[180px] md:w-[220px] lg:w-[240px] xl:w-[260px]">
+                            <img src="{{ asset('images/research.png') }}"
+                                class="w-[60px] md:w-[80px] lg:w-[90px] xl:w-[100px] mx-auto mb-3" alt="Research Icon" />
+                            <h1 class="font-semibold text-base md:text-lg xl:text-xl text-black mb-1">Research</h1>
+                            <p class="text-xs md:text-sm text-gray-700 leading-snug">
+                                We are constantly researching and exploring market needs to provide relevant and innovative
+                                IT solutions.
+                            </p>
+                        </div>
                     </div>
                     <div
-                        class="absolute top-20 left-10 md:-top-24 md:left-[220px] lg:-top-20 lg:left-[300px] xl:top-0 xl:left-[400px]">
-                        <h1 class="font-semibold text-base md:text-xl xl:text-2xl text-center">Concept</h1>
-                        <h1 class="text-sm md:text-base text-center">Concept short para</h1>
-                        <img src="{{ asset('images/concepts.png') }}"
-                            class="w-[90px] md:w-[130px] lg:w-[180px] xl:w-auto mx-auto" alt="">
-
+                        class="absolute top-12 left-4 md:-top-20 md:left-[200px] lg:-top-16 lg:left-[280px] xl:top-0 xl:left-[370px] text-center">
+                        <div class="bg-white p-3 rounded-xl shadow-md w-[180px] md:w-[220px] lg:w-[240px] xl:w-[260px]">
+                            <h1 class="font-semibold text-base md:text-lg xl:text-xl text-black mb-2">Concept & Design</h1>
+                            <p class="text-xs md:text-sm text-gray-700 leading-snug mb-3">
+                                We are constantly researching and exploring market needs.
+                            </p>
+                            <img src="{{ asset('images/concepts.png') }}"
+                                class="w-[60px] md:w-[80px] lg:w-[90px] xl:w-[100px] mx-auto"
+                                alt="Concept and Design Icon" />
+                        </div>
                     </div>
                     <div
-                        class="absolute -top-28 left-[250px] md:left-[400px] lg:-top-10 lg:left-[550px] xl:-top-24 xl:left-[700px]">
-                        <img src="{{ asset('images/design.png') }}"
-                            class="w-[90px] md:w-[130px] lg:w-[180px] xl:w-auto mx-auto" alt="">
-                        <h1 class="font-semibold text-base md:text-xl xl:text-2xl text-center">Design</h1>
-                        <h1 class="text-sm md:text-base text-center">Design short para</h1>
+                        class="absolute -top-20 left-[200px] md:left-[350px] lg:-top-6 lg:left-[500px] xl:-top-16 xl:left-[650px] text-center">
+                        <div class="bg-white p-3 rounded-xl shadow-md w-[180px] md:w-[220px] lg:w-[240px] xl:w-[260px]">
+                            <h1 class="font-semibold text-base md:text-lg xl:text-xl text-black mb-2">Production</h1>
+                            <p class="text-xs md:text-sm text-gray-700 leading-snug mb-3">
+                                Produced only with the best quality.
+                            </p>
+                            <img src="{{ asset('images/design.png') }}"
+                                class="w-[60px] md:w-[80px] lg:w-[90px] xl:w-[100px] mx-auto" alt="Production Icon" />
+                        </div>
                     </div>
                     <div
-                        class="absolute top-20 left-[250px]  md:-top-20 md:left-[600px] lg:-top-20 lg:left-[800px] xl:top-10 xl:left-[1050px]">
-                        <h1 class="font-semibold text-base md:text-xl xl:text-2xl text-center">Develop & Test</h1>
-                        <h1 class="text-sm md:text-base text-center">Concept short para</h1>
-                        <img src="{{ asset('images/develop.png') }}"
-                            class="w-[90px] md:w-[130px] lg:w-[180px] xl:w-auto mx-auto" alt="">
+                        class="absolute top-12 left-[200px] md:-top-16 md:left-[550px] lg:-top-16 lg:left-[730px] xl:top-4 xl:left-[960px] text-center">
+                        <div class="bg-white p-3 rounded-xl shadow-md w-[180px] md:w-[220px] lg:w-[240px] xl:w-[260px]">
+                            <h1 class="font-semibold text-base md:text-lg xl:text-xl text-black mb-2">Develop & Test</h1>
+                            <p class="text-xs md:text-sm text-gray-700 leading-snug mb-3">
+                                Built and published with senior professionals.
+                            </p>
+                            <img src="{{ asset('images/develop.png') }}"
+                                class="w-[60px] md:w-[80px] lg:w-[90px] xl:w-[100px] mx-auto" alt="Develop Icon" />
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -186,7 +216,7 @@
                                         <h1 class="font-semibold text-lg md:text-3xl">Smart Life</h1>
                                         <h1 class="font-semibold text-primary lg:text-lg">Hire Purchase Services
                                         </h1>
-                                        <button class="bg-primary w-56 text-white rounded-full px-5 py-2 text-lg">Usenn
+                                        <button class="bg-primary w-56 text-white rounded-full px-5 py-2 text-lg">Use
                                             Demo</button>
                                     </div>
                                 </div>
@@ -207,7 +237,7 @@
                                         <h1 class="font-semibold text-lg md:text-3xl">Smart Life</h1>
                                         <h1 class="font-semibold text-primary lg:text-lg">Hire Purchase Services
                                         </h1>
-                                        <button class="bg-primary w-56 text-white rounded-full px-5 py-2 text-lg">Usenn
+                                        <button class="bg-primary w-56 text-white rounded-full px-5 py-2 text-lg">Use
                                             Demo</button>
                                     </div>
                                 </div>
@@ -236,112 +266,6 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-            </div>
-        </div>
-
-        <div class="mx-10 lg:mx-20 mb-10">
-            <h1 class="text-center font-bold text-lg lg:text-4xl py-10">What We Do</h1>
-            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
-                <div class="group ">
-                    <div class="shadow-md h-[220px] group-hover:bg-[#f2fcf5]  p-10 rounded-md text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-code-square mx-auto mb-5" viewBox="0 0 16 16">
-                            <path
-                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                            <path
-                                d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
-                        </svg>
-                        <h1 class="font-semibold text-lg mb-2">Build</h1>
-                        <h1 class="text-sm mb-2">Help you build something</h1>
-                        <div class="flex items-center justify-center">
-                            <button class="font-semibold text-sm   flex items-center  overflow-hidden group">
-                                <i
-                                    class="fa-solid fa-arrow-right mr-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                                <h1
-                                    class="btn-text  transform -translate-x-3 group-hover:translate-x-3 transition duration-500 ease-in-out group-hover:text-primary">
-                                    Learn More</h1>
-                                <i
-                                    class="fa-solid fa-arrow-right ml-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="shadow-md h-[220px] group-hover:bg-[#f2fcf5]  p-10 rounded-md text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-code-square mx-auto mb-5" viewBox="0 0 16 16">
-                            <path
-                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                            <path
-                                d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
-                        </svg>
-                        <h1 class="font-semibold text-lg mb-2">Customise</h1>
-                        <h1 class="text-sm mb-2">Customise a solution for your business</h1>
-                        <div class="flex items-center justify-center">
-                            <button class="font-semibold text-sm   flex items-center  overflow-hidden group">
-                                <i
-                                    class="fa-solid fa-arrow-right mr-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                                <h1
-                                    class="btn-text  transform -translate-x-3 group-hover:translate-x-3 transition duration-500 ease-in-out group-hover:text-primary">
-                                    Learn More</h1>
-                                <i
-                                    class="fa-solid fa-arrow-right ml-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="shadow-md h-[220px] group-hover:bg-[#f2fcf5]  p-10 rounded-md text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-code-square mx-auto mb-5" viewBox="0 0 16 16">
-                            <path
-                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                            <path
-                                d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
-                        </svg>
-                        <h1 class="font-semibold text-lg mb-2">Build</h1>
-                        <h1 class="text-sm mb-2">Help you build something</h1>
-                        <div class="flex items-center justify-center">
-                            <button class="font-semibold text-sm   flex items-center  overflow-hidden group">
-                                <i
-                                    class="fa-solid fa-arrow-right mr-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                                <h1
-                                    class="btn-text  transform -translate-x-3 group-hover:translate-x-3 transition duration-500 ease-in-out group-hover:text-primary">
-                                    Learn More</h1>
-                                <i
-                                    class="fa-solid fa-arrow-right ml-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="shadow-md h-[220px] group-hover:bg-[#f2fcf5]  p-10 rounded-md text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-code-square mx-auto mb-5" viewBox="0 0 16 16">
-                            <path
-                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                            <path
-                                d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
-                        </svg>
-                        <h1 class="font-semibold text-lg mb-2">Build</h1>
-                        <h1 class="text-sm mb-2">Help you build something</h1>
-                        <div class="flex items-center justify-center">
-                            <button class="font-semibold text-sm   flex items-center  overflow-hidden group">
-                                <i
-                                    class="fa-solid fa-arrow-right mr-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                                <h1
-                                    class="btn-text  transform -translate-x-3 group-hover:translate-x-3 transition duration-500 ease-in-out group-hover:text-primary">
-                                    Learn More</h1>
-                                <i
-                                    class="fa-solid fa-arrow-right ml-3 transform -translate-x-3 group-hover:translate-x-3 transition duration-300 ease-in group-hover:text-primary"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
 
