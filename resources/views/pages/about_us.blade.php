@@ -49,38 +49,38 @@
 
         {{--  meet the teamm start   --}}
         <div>
-            <div class="bg-[#f2fcf5] pb-2 mt-60 lg:mt-60 xl:mt-60">
+            <div class="bg-[#f2fcf5] lg:mt-60 xl:mt-60">
                 <h1 class="text-center font-bold text-lg lg:text-4xl py-10">Our Professional Team</h1>
-                <div class="swiper mySwiper2">
+                <div class="swiper mySwiper2" style="max-height: 400px;">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide px-6" style="height: 50%;">
+                        <div class="swiper-slide px-6">
                             <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM1.png') }}" class="h-[300px] w-full object-cover mx-auto"
                                     alt="">
                                 <div
-                                    class="bg-black transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px] w-full absolute bottom-0">
+                                    class="bg-black overflow-hidden transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px] w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">Ko Aungnaing Phyoe</h1>
                                     <h1 class="text-white text-center font-thin">Developer</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide px-6" style="height: 50%;">
+                        <div class="swiper-slide px-6">
                             <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM2.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
-                                    class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
+                                class="bg-black overflow-hidden transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px] w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">Ko Ye Wint Kyaw</h1>
                                     <h1 class="text-white text-center font-thin ">Developer</h1>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide px-6" style="height: 50%;">
+                        <div class="swiper-slide px-6">
                             <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM3.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
-                                    class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
+                                class="bg-black overflow-hidden transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px] w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">Ko Phyo Thura Oo</h1>
                                     <h1 class="text-white text-center font-thin ">Developer</h1>
                                 </div>
@@ -91,7 +91,7 @@
                                 <img src="{{ asset('images/TM4.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
-                                    class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
+                                class="bg-black overflow-hidden transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px] w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">U Win Maung</h1>
                                     <h1 class="text-white text-center font-thin ">Managing Director</h1>
                                 </div>
@@ -102,7 +102,7 @@
                                 <img src="{{ asset('images/TM5.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
-                                    class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
+                                class="bg-black overflow-hidden transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px] w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">U Win Maung</h1>
                                     <h1 class="text-white text-center font-thin ">Managing Director</h1>
                                 </div>
@@ -113,7 +113,7 @@
                                 <img src="{{ asset('images/TM6.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
-                                    class="bg-black  transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px]   w-full absolute bottom-0">
+                                class="bg-black overflow-hidden transition-all duration-700 opacity-70 h-[0px] group-hover:h-[100px] w-full absolute bottom-0">
                                     <h1 class="text-white text-center mt-5">U Win Maung</h1>
                                     <h1 class="text-white text-center font-thin ">Managing Director</h1>
                                 </div>
