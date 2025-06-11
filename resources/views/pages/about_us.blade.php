@@ -13,7 +13,7 @@
 
         {{--  mission vision start   --}}
 
-        <div class="relative  mx-auto w-full lg:w-3/4  mt-10 lg:mt-20 ">
+        <div class="relative  mx-auto w-full lg:w-3/4 lg:mt-10">
             <img src="{{ asset('images/mission.png') }}" class="" alt="">
             <div
                 class="bg-white absolute w-20 -top-4 left-8  md:-top-3 md:left-12 lg:-top-3 lg:left-12 xl:-top-2 xl:left-24 md:w-36 text-center py-1 md:py-4 font-semibold text-lg text-[#EDBB30]">
@@ -49,12 +49,12 @@
 
         {{--  meet the teamm start   --}}
         <div>
-            <div class="bg-[#f2fcf5] pb-10 mt-60 lg:mt-72 xl:mt-80 mb-10">
-                <h1 class="text-center font-bold text-lg  lg:text-2xl mb-5 py-4 gap-1">Our Professional Team</h1>
+            <div class="bg-[#f2fcf5] pb-2 mt-60 lg:mt-60 xl:mt-60">
+                <h1 class="text-center font-bold text-lg lg:text-4xl py-10">Our Professional Team</h1>
                 <div class="swiper mySwiper2">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide px-6">
-                            <div class="relative group w-[90%] max-w-[280px] mx-auto mt-20">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide px-6" style="height: 50%;">
+                            <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM1.png') }}" class="h-[300px] w-full object-cover mx-auto"
                                     alt="">
                                 <div
@@ -64,8 +64,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide px-6">
-                            <div class="relative group w-[90%] max-w-[280px] mx-auto mt-20">
+                        <div class="swiper-slide px-6" style="height: 50%;">
+                            <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM2.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
@@ -75,8 +75,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide px-6">
-                            <div class="relative group w-[90%] max-w-[280px] mx-auto mt-20">
+                        <div class="swiper-slide px-6" style="height: 50%;">
+                            <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM3.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide px-6">
-                            <div class="relative group w-[90%] max-w-[280px] mx-auto mt-20">
+                            <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM4.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide px-6">
-                            <div class="relative group w-[90%] max-w-[280px] mx-auto mt-20">
+                            <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM5.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide px-6">
-                            <div class="relative group w-[90%] max-w-[280px] mx-auto mt-20">
+                            <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM6.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
                                 <div
@@ -135,20 +135,17 @@
                                 d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
                         </svg>
                     </div>
-
                 </div>
-
             </div>
         </div>
 
         <div class="">
             <div class="mx-5 lg:mx-10  ">
-                <h1 class="text-center font-bold text-lg lg:text-4xl py-10">How we build good to great
-                    business
+                <h1 class="text-center font-bold text-lg lg:text-4xl py-10">How we build good to great business
                 </h1>
             </div>
 
-            <div style="background-image: url({{ asset('images/map.png') }})" class=" mt-48 h-[300px] bg-no-repeat w-full ">
+            <div style="background-image: url({{ asset('images/map.png') }})" class=" mt-32 h-[300px] bg-no-repeat w-full ">
                 <div class="relative grid grid-cols-1">
                     <div class="absolute -top-20 left-4 md:left-8 lg:-top-6 xl:-top-16 xl:left-16 text-center">
                         <div class="bg-white p-3 rounded-xl shadow-md w-[180px] md:w-[220px] lg:w-[240px] xl:w-[260px]">
