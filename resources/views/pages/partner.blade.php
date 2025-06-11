@@ -90,7 +90,7 @@
                         class="bg-[#444B8C] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
                         <div class="px-6 py-6">
                             <img src="{{ asset('images/Partner 1.png') }}" alt="Affiliates"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md" />
+                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
                             <h2 class="text-xl font-bold mb-2">IT STUDENTS</h2>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         class="bg-[#FC75B1] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
                         <div class="px-6 py-6">
                             <img src="{{ asset('images/Partner 2.png') }}" alt="Resellers"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md" />
+                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
                             <h2 class="text-xl font-bold mb-2">ODOO ERP</h2>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                         class="bg-[#FEB236] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
                         <div class="px-6 py-6">
                             <img src="{{ asset('images/Partner 3.png') }}" alt="Payroll Outsourcing"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md" />
+                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
                             <h2 class="text-xl font-bold mb-2">HR STUDENTS</h2>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                         class="bg-[#00BBB3] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
                         <div class="px-6 py-6">
                             <img src="{{ asset('images/Partner 4.png') }}" alt="App Partners"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md" />
+                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
                             <h2 class="text-xl font-bold mb-2">CLOUD SERVERS</h2>
                         </div>
                     </div>
