@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide px-6" style="height: 50%;">
+                        <div class="swiper-slide px-6">
                             <div class="relative group w-[90%] max-w-[280px] mx-auto">
                                 <img src="{{ asset('images/TM3.png') }}" class="h-[300px] w-full object-cover mx-auto "
                                     alt="">
