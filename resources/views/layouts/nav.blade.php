@@ -17,8 +17,6 @@
                           <a href="{{ route('about_us') }}">About</a>
                       </li>
                   </ul>
-
-
               </div>
           </div>
           <div class="sm:hidden" id="menuButton">
