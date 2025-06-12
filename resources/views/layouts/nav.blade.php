@@ -16,8 +16,11 @@
                               class="{{ request()->routeIs('partner') ? 'text-green-600 font-semibold' : '' }}">Partnership</a>
                       </li>
                       <li>
+                          <a href="#" >Our Products</a>
+                      </li>
+                      <li>
                           <a href="{{ route('about_us') }}"
-                              class="{{ request()->routeIs('about_us') ? 'text-green-600 font-semibold' : '' }}">About</a>
+                              class="{{ request()->routeIs('about_us') ? 'text-green-600 font-semibold' : '' }}">About Us</a>
                       </li>
                   </ul>
               </div>
@@ -38,8 +41,11 @@
                           class="{{ request()->routeIs('partner') ? 'text-green-600' : '' }}">Partnership</a>
                   </li>
                   <li>
+                      <a href="#" >Our Products</a>
+                  </li>
+                  <li>
                       <a href="{{ route('about_us') }}"
-                          class="{{ request()->routeIs('about_us') ? 'text-green-600' : '' }}">About</a>
+                          class="{{ request()->routeIs('about_us') ? 'text-green-600' : '' }}">About Us</a>
                   </li>
               </ul>
           </div>

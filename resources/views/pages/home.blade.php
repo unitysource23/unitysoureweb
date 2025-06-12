@@ -39,7 +39,7 @@
                 <!-- Text Section -->
                 <div class="flex flex-col pb-10 mb-20 items-start text-right w-full lg:w-1/2 px-4">
                 <h1 class="text-2xl lg:text-5xl font-bold leading-tight">
-                    We make all of your business needs
+                    we make all of your business needs
                 </h1>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                         <h1 class="font-bold text-xl md:text-xl lg:text-3xl mb-2">Discover why many entrepreneurs
                             choose</h1>
                         <span
-                            class="font-bold text-xl md:text-xl lg:text-3xl bg-gradient-to-r from-primary to-[#39c457] text-white">Unity
+                            class="font-bold text-xl md:text-xl lg:text-3xl  from-primary to-[#39c457] text-black">Unity
                             Source to build their business
                         </span>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[70px]">
@@ -106,7 +106,7 @@
         {{-- Our Partner start   --}}
         <div class="mx-5 lg:mx-10 xl:mx-20 mt-10">
             <h1 class="text-center font-bold text-xl lg:text-4xl mb-7 ">Our Clients</h1>
-            <div class="flex justify-center items-center text-center flex-row gap-10 mt-10">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 px-4">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c1.jpg" class="w-[100px]" alt="">
                 </div>
@@ -125,8 +125,6 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c6.jpg" class="w-[100px]" alt="">
                 </div>
-            </div>
-            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c7.jpg" class="w-[100px]" alt="">
                 </div>
@@ -145,8 +143,6 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c12.jpg" class="w-[100px]" alt="">
                 </div>
-            </div>
-            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c13.jpg" class="w-[100px]" alt="">
                 </div>
@@ -165,8 +161,6 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c18.jpg" class="w-[80px]" alt="">
                 </div>
-            </div>
-            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c19.jpg" class="w-[80px]" alt="">
                 </div>
@@ -185,8 +179,6 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c24.jpg" class="w-[100px]" alt="">
                 </div>
-            </div>
-            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c25.jpg" class="w-[100px]" alt="">
                 </div>
@@ -205,8 +197,6 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c30.jpg" class="w-[100px]" alt="">
                 </div>
-            </div>
-            <div class="flex justify-center items-center text-center flex-row gap-10  mt-10">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c31.jpg" class="w-[100px]" alt="">
                 </div>
@@ -225,9 +215,9 @@
 
         <div class="bg-[#DEFFD8] mt-30" >
             <div class="text-center py-10">
-                <h1 class="font-semibold text-base lg:text-xl mb-2">Jump-start your transformation journey now</h1>
-                <h1 class="text-[#797979] text-xs lg:text-sm">We provide anything you could ask for- uniquely
-                    end-to-end
+                <h1 class="font-semibold text-base lg:text-xl mb-2">Jump start your transformation journey now</h1>
+                <h1 class="text-[#797979] text-xs lg:text-sm">We provide anything you could ask for uniquely
+                    end to end
                     solution provider as your trusted partner.</h1>
             </div>
         </div>
