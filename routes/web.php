@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AppSettingsController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\OurProductController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TeamController;
@@ -78,6 +79,14 @@ Route::prefix('partner')->group(function () {
         Route::get('{partner}/edit', 'index')->name('partner-edit');
 
         Route::put('/{partner}', 'update')->name('partner-update');
+    });
+});
+
+Route::prefix('our-products')->group(function () {
+
+    Route::controller(OurProductController::class)->group(function () {
+
+        Route::get('/', 'index')->name('our_products');
     });
 });
 

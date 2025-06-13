@@ -2,19 +2,30 @@
 @section('title', 'Partner')
 @section('css')
     <style>
-        .text-primary li::marker {
-            color: #128100;
+        .partner-background {
+            background-image: url('{{ asset('images/handshake.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .partner-overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* light white overlay */
         }
     </style>
 @endsection
 
 @section('content')
-    <section class="partner">
-        <div class="px-4 py-8 sm:px-6 lg:px-10">
-
-            {{--  Our Successful Partners --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 items-center">
-                <div>
+    <section class="partner partner-background">
+        <div class="partner-overlay px-4 py-8 sm:px-6 lg:px-10">
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 items-center overflow-hidden rounded-xl">
+                <div class="absolute inset-0 z-0">
+                    <img src="{{ asset('images/handshake.png') }}" alt="Background"
+                        class="w-full h-full object-cover opacity-40" />
+                </div>
+                <div class="relative z-10 p-6">
                     <div class="font-bold text-3xl sm:text-4xl mb-5">
                         <p class="text-black">Our Successful</p>
                         <p class="text-black">Partners'</p>
@@ -27,17 +38,17 @@
                         <li class="text-black">ERP Solution Support</li>
                     </ul>
                 </div>
-                <div class="flex justify-center">
-                    <img src="{{ asset('images/handshake.jpg') }}" alt="Partnership" class="max-w-full h-auto mt-10 rounded-lg border-4 border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <!-- Empty Right Column -->
+                <div class="relative z-10 flex justify-center p-6">
+                    <!-- You can add more content or keep it empty -->
                 </div>
             </div>
 
-            {{--  Our Partner Programme --}}
+
+            {{-- Our Partner Programme --}}
             <div class="mb-16">
                 <h1 class="font-bold text-2xl sm:text-3xl text-black text-center">Our Partner Program</h1>
-                <div class="flex justify-center my-2">
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
                     <div class="flex items-center">
                         <div>
                             <h2 class="font-bold text-xl sm:text-2xl text-black mb-6">Benefits</h2>
@@ -61,10 +72,9 @@
             </div>
 
             {{-- Partners --}}
-            <div class="bg-gray-50 py-10 px-4 sm:px-10">
+            <div class="py-10 px-4 sm:px-10">
                 <div class="max-w-7xl mx-auto">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Card Template -->
                         @php
                             $cards = [
                                 ['img' => 'Partner 1.png', 'title' => 'IT STUDENTS'],
