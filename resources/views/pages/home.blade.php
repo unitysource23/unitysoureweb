@@ -159,13 +159,13 @@
                     <img src="images/c17.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/c18.jpg" class="w-[80px]" alt="">
+                    <img src="images/c18.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/c19.jpg" class="w-[80px]" alt="">
+                    <img src="images/c19.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
-                    <img src="images/c20.jpg" class="w-[80px]" alt="">
+                    <img src="images/c20.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c21.jpg" class="w-[100px]" alt="">
