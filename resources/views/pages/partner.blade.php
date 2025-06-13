@@ -4,132 +4,94 @@
     <style>
         .text-primary li::marker {
             color: #128100;
-            /* Custom bullet color */
-        }
-
-        .hover\:scale-105 {
-            transform: scale(1.05);
         }
     </style>
 @endsection
+
 @section('content')
     <section class="partner">
-        <div class="m-5 lg:m-10">
-            {{--  our successful partners    --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 mb-20">
-                <div class="flex items-center ">
-                    <div>
-                        <div class="font-bold text-4xl mb-5">
-                            <span class="text-black">Our</span>
-                            <span class="text-black">Successful </span>
-                            <span class="text-black">Partners'</span>
-                            <h1 class="text-black">Business Industry</h1>
-                        </div>
-                        <ul class="list-inside list-custom-disc grid grid-cols-2 gap-4 text-primary">
-                            <li class=" text-black ">Academy HR</li>
-                            <li class=" text-black ">Vocational IT School</li>
-                            <li class=" text-black ">Cloud Server Support</li>
-                            <li class=" text-black ">ERP Solution Support</li>
-                        </ul>
+        <div class="px-4 py-8 sm:px-6 lg:px-10">
+
+            {{--  Our Successful Partners --}}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 items-center">
+                <div>
+                    <div class="font-bold text-3xl sm:text-4xl mb-5">
+                        <p class="text-black">Our Successful</p>
+                        <p class="text-black">Partners'</p>
+                        <p class="text-black">Business Industry</p>
                     </div>
+                    <ul class="list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4 text-primary text-base mt-10">
+                        <li class="text-black">Academic HR</li>
+                        <li class="text-black">Vocational IT</li>
+                        <li class="text-black">Cloud Server Support</li>
+                        <li class="text-black">ERP Solution Support</li>
+                    </ul>
                 </div>
-                <div class="flex justify-center items-center">
-                    <img src="{{ asset('images/partnership1.png') }}" alt="Partnership"/>
+                <div class="flex justify-center">
+                    <img src="{{ asset('images/handshake.jpg') }}" alt="Partnership" class="max-w-full h-auto mt-10 rounded-lg border-4 border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 </div>
             </div>
 
-            {{--  Our Partner Programme  --}}
-            <div>
-                <h1 class="font-bold text-3xl text-black text-center">Our Partner Programme</h1>
-                <div class="flex items-center justify-center">
-                    <hr class="w-52">
+            {{--  Our Partner Programme --}}
+            <div class="mb-16">
+                <h1 class="font-bold text-2xl sm:text-3xl text-black text-center">Our Partner Program</h1>
+                <div class="flex justify-center my-2">
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div class="flex items-center">
                         <div>
-                            <h1 class="font-bold text-3xl text-black mb-10">Benefits</h1>
-                            <div class="flex flex-col gap-8">
-                                <div class=" flex  items-center gap-3">
-                                    <div class="grow-1">
+                            <h2 class="font-bold text-xl sm:text-2xl text-black mb-6">Benefits</h2>
+                            <div class="flex flex-col gap-6">
+                                @foreach (['To achieve mutual benefit in both businesses', 'To help businesses run more efficiently with the help of technology'] as $benefit)
+                                    <div class="flex items-start gap-3">
                                         <div
-                                            class="bg-primary  w-9 h-9 rounded-full flex items-center justify-center text-white">
-                                            <i class="fa-solid fa-check"></i>
+                                            class="bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white">
+                                            <i class="fa-solid fa-check text-sm"></i>
                                         </div>
+                                        <p class="text-black text-base text-justify">{{ $benefit }}</p>
                                     </div>
-
-                                    <div class="text-justify text-base text-black">
-                                        <h1>To achieve mutual benefit in both businesses </h1>
-                                    </div>
-                                </div>
-                                <div class=" flex  items-center gap-3">
-                                    <div class="grow-1">
-                                        <div
-                                            class="bg-primary  w-9 h-9 rounded-full flex items-center justify-center text-white">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="text-justify text-base text-black">
-                                        <h1>To help businesses run more efficiently with the help of technology </h1>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="{{ asset('images/Benefits.png') }}" alt="">
+                    <div class="flex justify-center">
+                        <img src="{{ asset('images/Benefits.png') }}" alt="Benefits" class="max-w-full h-auto">
                     </div>
                 </div>
             </div>
-            {{--  Choose from 4 Partner Type   --}}
-            <div>
-                <h1 class="font-bold text-3xl text-black text-center mb-10">Choose From 4 Partner Types</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                    <div
-                        class="bg-[#444B8C] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-                        <div class="px-6 py-6">
-                            <img src="{{ asset('images/Partner 1.png') }}" alt="Affiliates"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
-                            <h2 class="text-xl font-bold mb-2">IT STUDENTS</h2>
-                        </div>
+            {{-- Partners --}}
+            <div class="bg-gray-50 py-10 px-4 sm:px-10">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Card Template -->
+                        @php
+                            $cards = [
+                                ['img' => 'Partner 1.png', 'title' => 'IT STUDENTS'],
+                                ['img' => 'Partner 2.png', 'title' => 'ODOO ERP'],
+                                ['img' => 'Partner 3.png', 'title' => 'HR STUDENTS'],
+                                ['img' => 'Partner 4.png', 'title' => 'CLOUD SERVERS'],
+                            ];
+                        @endphp
+
+                        @foreach ($cards as $card)
+                            <div
+                                class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                                <div class="p-6">
+                                    <img src="{{ asset('images/' . $card['img']) }}" alt="{{ $card['title'] }}"
+                                        class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
+                                    <h2 class="text-xl font-semibold text-gray-800">{{ $card['title'] }}</h2>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
-
-                    <div
-                        class="bg-[#FC75B1] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-                        <div class="px-6 py-6">
-                            <img src="{{ asset('images/Partner 2.png') }}" alt="Resellers"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
-                            <h2 class="text-xl font-bold mb-2">ODOO ERP</h2>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-[#FEB236] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-                        <div class="px-6 py-6">
-                            <img src="{{ asset('images/Partner 3.png') }}" alt="Payroll Outsourcing"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
-                            <h2 class="text-xl font-bold mb-2">HR STUDENTS</h2>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-[#00BBB3] text-white text-center rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-                        <div class="px-6 py-6">
-                            <img src="{{ asset('images/Partner 4.png') }}" alt="App Partners"
-                                class="w-36 h-36 mx-auto mb-4 rounded-full shadow-md object-cover" />
-                            <h2 class="text-xl font-bold mb-2">CLOUD SERVERS</h2>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
         </div>
-
     </section>
-
 @endsection
+
 @section('script')
     <script></script>
 @endsection
