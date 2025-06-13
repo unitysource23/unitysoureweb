@@ -79,7 +79,7 @@
                             class="font-bold text-xl md:text-xl lg:text-3xl  from-primary to-[#39c457] text-black">Unity
                             Source to build their business
                         </span>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[70px]">
+                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[70px]">
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
                                 <h1 class="font-bold text-lg lg:text-3xl">IT Solutions</h1>
