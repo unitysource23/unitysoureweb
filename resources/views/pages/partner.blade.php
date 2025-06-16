@@ -38,12 +38,11 @@
                         <li class="text-white font-bold">ERP Solution Support</li>
                     </ul>
                 </div>
-                <!-- Empty Right Column -->
+
                 <div class="relative z-10 flex justify-center p-6">
-                    <!-- You can add more content or keep it empty -->
+
                 </div>
             </div>
-
 
             {{-- Our Partner Programme --}}
             <div class="mb-16">
