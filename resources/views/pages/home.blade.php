@@ -106,7 +106,7 @@
         {{-- Our Partner start   --}}
         <div class="mx-5 lg:mx-10 xl:mx-20 mt-10">
             <h1 class="text-center font-bold text-xl lg:text-4xl mb-7 ">Our Clients</h1>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 px-4">
+            <div class="grid grid-cols-2 gap-6 mt-10 px-4 sm:flex sm:flex-wrap sm:justify-center">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c1.jpg" class="w-[100px]" alt="">
                 </div>
