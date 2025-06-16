@@ -77,63 +77,62 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next outline outline-gray-400 outline-1 text-gray-600 hover:text-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    <div class="swiper-button-next outline outline-gray-400 outline-1 text-gray-600 hover:text-gray-800 p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                         </svg>
                     </div>
-                    <div class="swiper-button-prev outline outline-gray-400 outline-1 text-gray-600 hover:text-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                    <div class="swiper-button-prev outline outline-gray-400 outline-1 text-gray-600 hover:text-gray-800 p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                         </svg>
                     </div>
+                    
                 </div>
             </div>
         </div>
 
         <div class="">
             <div class="px-4 sm:px-6 lg:px-10">
-                <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl py-5 sm:py-8">
+                <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl mt-10 mb-6 sm:my-12">
                     How we build good to great business
                 </h1>
-
+            
                 <!-- Background Image Section -->
-                <div class="relative mt-6 sm:mt-8 lg:mt-10 bg-no-repeat bg-center bg-contain lg:bg-cover h-auto py-10 sm:py-12 lg:py-20" style="background-image: url('{{ asset('images/map.png') }}');">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-10 max-w-7xl mx-auto px-2 sm:px-4">
-                        <div class="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <h1 class="font-semibold text-base sm:text-lg md:text-xl mb-2 text-black">Research</h1>
+                <div class="relative bg-no-repeat bg-center bg-contain lg:bg-cover py-12 sm:py-16 lg:py-20">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 max-w-7xl mx-auto px-2 sm:px-4">
+                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
+                            <img src="{{ asset('images/research.png') }}" alt="Research Icon" class="w-16 lg:w-24 mx-auto mb-4" />
+                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Research</h2>
                             <p class="text-sm text-gray-700 leading-snug">
                                 We are constantly researching and exploring market needs.
                             </p>
-                            <img src="{{ asset('images/research.png') }}" alt="Research Icon" class="w-12 sm:w-16 lg:w-24 mx-auto mb-2 sm:mb-4" />
                         </div>
-                        <div class="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <h1 class="font-semibold text-base sm:text-lg md:text-xl mb-2 text-black">Concept & Design</h1>
+                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
+                            <img src="{{ asset('images/concepts.png') }}" alt="Concept and Design Icon" class="w-16 lg:w-24 mx-auto mb-4" />
+                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Concept & Design</h2>
                             <p class="text-sm text-gray-700 leading-snug">
                                 We are constantly researching and exploring market needs.
                             </p>
-                            <img src="{{ asset('images/concepts.png') }}" alt="Concept and Design Icon" class="w-12 sm:w-16 lg:w-24 mx-auto mb-2 sm:mb-4" />
                         </div>
-                        <div class="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <h1 class="font-semibold text-base sm:text-lg md:text-xl mb-2 text-black">Develop & Test</h1>
+                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
+                            <img src="{{ asset('images/develop.png') }}" alt="Develop Icon" class="w-16 lg:w-24 mx-auto mb-4" />
+                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Develop & Test</h2>
                             <p class="text-sm text-gray-700 leading-snug">
                                 Built and published with senior professionals.
                             </p>
-                            <img src="{{ asset('images/develop.png') }}" alt="Develop Icon" class="w-12 sm:w-16 lg:w-24 mx-auto mb-2 sm:mb-4" />
                         </div>
-                        <div class="bg-white p-4 sm:p-5 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <h1 class="font-semibold text-base sm:text-lg md:text-xl mb-2 text-black">Production</h1>
+                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
+                            <img src="{{ asset('images/design.png') }}" alt="Production Icon" class="w-16 lg:w-24 mx-auto mb-4" />
+                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Production</h2>
                             <p class="text-sm text-gray-700 leading-snug">
                                 Produced only with the best quality.
                             </p>
-                            <img src="{{ asset('images/design.png') }}" alt="Production Icon" class="w-12 sm:w-16 lg:w-24 mx-auto mb-2 sm:mb-4" />
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
-
-        {{-- get started with our app --}}
     </section>
 @endsection
 @section('script')
