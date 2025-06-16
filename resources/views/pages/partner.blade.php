@@ -22,7 +22,7 @@
         <div class="partner-overlay px-4 py-8 sm:px-6 lg:px-10">
             <div class="relative grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 items-center overflow-hidden rounded-xl">
                 <div class="absolute inset-0 z-0">
-                    <img src="{{ asset('images/partner2.jpg') }}" alt="Background"
+                    <img src="{{ asset('images/handshake2.jpg') }}" alt="Background"
                         class="w-full h-full object-cover opacity-100" />
                 </div>
                 <div class="relative z-10 p-6">
