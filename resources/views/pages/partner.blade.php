@@ -22,20 +22,20 @@
         <div class="partner-overlay px-4 py-8 sm:px-6 lg:px-10">
             <div class="relative grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 items-center overflow-hidden rounded-xl">
                 <div class="absolute inset-0 z-0">
-                    <img src="{{ asset('images/handshake.png') }}" alt="Background"
-                        class="w-full h-full object-cover opacity-60" />
+                    <img src="{{ asset('images/partner2.jpg') }}" alt="Background"
+                        class="w-full h-full object-cover opacity-100" />
                 </div>
                 <div class="relative z-10 p-6">
                     <div class="font-bold text-3xl sm:text-4xl mb-5">
-                        <p class="text-black">Our Successful</p>
-                        <p class="text-black">Partners'</p>
-                        <p class="text-black">Business Industry</p>
+                        <p class="text-white">Our Successful</p>
+                        <p class="text-white">Partners'</p>
+                        <p class="text-white">Business Industry</p>
                     </div>
                     <ul class="list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4 text-primary text-lg mt-10">
-                        <li class="text-black">Academic HR</li>
-                        <li class="text-black">Vocational IT</li>
-                        <li class="text-black">Cloud Server Support</li>
-                        <li class="text-black">ERP Solution Support</li>
+                        <li class="text-white">Academic HR</li>
+                        <li class="text-white">Vocational IT</li>
+                        <li class="text-white">Cloud Server Support</li>
+                        <li class="text-white">ERP Solution Support</li>
                     </ul>
                 </div>
                 <!-- Empty Right Column -->
