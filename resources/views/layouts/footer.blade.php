@@ -7,8 +7,7 @@
                 <i class="fas fa-map-marker-alt"></i> Address
             </h4>
             <p>Room No.(7–A), (7) Floor<br>
-                Mawyawady Condo<br>
-                (8) Mile,Pyay Road, Mayangone,<br> Yangon
+                Mawyawady Condo, (8) Mile,<br> Pyay Road, Mayangone Township,<br> Yangon.
             </p>
         </div>
 

@@ -17,12 +17,11 @@
                       </li>
                       <li>
                           <a href="{{ route('our_products') }}"
-                              class="{{ request()->routeIs('our_products') ? 'text-green-600 font-semibold' : '' }}">Our Products</a>
+                              class="whitespace-nowrap {{ request()->routeIs('our_products') ? 'text-green-600 font-semibold' : '' }}">Our Products</a>
                       </li>
                       <li>
                           <a href="{{ route('about_us') }}"
-                              class="{{ request()->routeIs('about_us') ? 'text-green-600 font-semibold' : '' }}">About
-                              Us</a>
+                              class="whitespace-nowrap {{ request()->routeIs('about_us') ? 'text-green-600 font-semibold' : '' }}">About Us</a>
                       </li>
                   </ul>
               </div>

@@ -52,15 +52,24 @@
                         <div>
                             <h2 class="font-bold text-lg lg:text-3xl text-black mb-6">Benefits</h2>
                             <div class="flex flex-col gap-6">
-                                @foreach (['To achieve mutual benefit in both businesses', 'To help businesses run more efficiently with the help of technology'] as $benefit)
-                                    <div class="flex items-start gap-3">
-                                        <div
-                                            class="bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white">
-                                            <i class="fa-solid fa-check text-sm"></i>
-                                        </div>
-                                        <p class="text-black text-base text-justify">{{ $benefit }}</p>
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="bg-primary w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-check text-xs sm:text-sm md:text-base"></i>
                                     </div>
-                                @endforeach
+                                    <p class="text-black text-base text-left">
+                                        To achieve mutual benefit in both businesses
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="bg-primary w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-check text-xs sm:text-sm md:text-base"></i>
+                                    </div>
+                                    <p class="text-black text-base text-left">
+                                        To help businesses run more efficiently with the help of technology
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,28 +83,32 @@
             <div class="py-10 px-4 sm:px-10">
                 <div class="max-w-7xl mx-auto">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                             <div class="p-6">
                                 <img src="images/Partner 1.png" alt="IT STUDENTS"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
                                 <h2 class="text-xl font-semibold text-gray-800">IT STUDENTS</h2>
                             </div>
                         </div>
-                        <div class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                             <div class="p-6">
                                 <img src="images/Partner 2.png" alt="ODOO ERP"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
                                 <h2 class="text-xl font-semibold text-gray-800">ODOO ERP</h2>
                             </div>
                         </div>
-                        <div class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                             <div class="p-6">
                                 <img src="images/Partner 3.png" alt="HR STUDENTS"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
                                 <h2 class="text-xl font-semibold text-gray-800">HR STUDENTS</h2>
                             </div>
                         </div>
-                        <div class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-white text-center rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                             <div class="p-6">
                                 <img src="images/Partner 4.png" alt="CLOUD SERVERS"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
