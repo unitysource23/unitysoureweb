@@ -56,20 +56,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-start items-start">
                 <div class="col-span-1 md:col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('images/country-map.png') }}" class="h-[650px] mx-auto" alt="">
-                        <img src="{{ asset('images/greenpeople.png') }}"
-                            class="absolute top-60 md:top-44 lg:top-60 right-20 md:right-14   lg:right-20 xl:right-32 w-10"
-                            alt="">
-                        <img src="{{ asset('images/greenpeople.png') }}"
-                            class="absolute top-60 md:top-44 lg:top-24 right-20 md:right-14   lg:right-32 xl:right-44 w-10"
-                            alt="">
-                        <img src="{{ asset('images/greenpeople.png') }}"
-                            class="absolute top-60 md:top-32 lg:top-48 right-20 md:right-32   lg:right-48 xl:right-64 w-8"
-                            alt="">
-                        <img src="{{ asset('images/greenpeople.png') }}"
-                            class="absolute top-60 md:top-56 lg:top-60 left-10 lg:left-7 xl:left-16 w-8" alt="">
+                        <img src="{{ asset('images/country-map-1.jpg') }}" class="h-[650px] mx-auto" alt="">
                     </div>
-
                 </div>
                 <div class="col-span-1 md:col-span-2 flex items-center">
                     <div>
