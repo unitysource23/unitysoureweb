@@ -1,4 +1,4 @@
-<footer class="bg-green-700 text-white text-sm px-6 py-6">
+<footer id="footer" class="bg-green-700 text-white text-sm px-6 py-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
         <!-- Address -->

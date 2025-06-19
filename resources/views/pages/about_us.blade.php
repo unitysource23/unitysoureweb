@@ -1,115 +1,88 @@
 @extends('layouts.master')
 @section('title', 'About')
-@section('css')
-    <style>
-        .arrow-shape {
-            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
-        }
-    </style>
-@endsection
 @section('content')
-    <section class="px-4 sm:px-6 lg:px-12 py-12">
-        <div class="relative w-full h-[200px] sm:h-[200px] md:h-[200px] lg:h-[250px] overflow-hidden rounded-2xl">
-            <img src="{{ asset('images/abt-us-banner.jpg') }}" alt="About Us Banner"
-                class="absolute inset-0 w-full h-full object-cover opacity-100 object-center">
+    <section class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
+        <img src="{{ asset('images/business-people.jpg') }}" alt="About Us Banner"
+            class="absolute inset-0 w-full h-full object-cover object-center" />
 
-            <div class="relative z-10 flex items-center h-full px-6 sm:px-10 text-white">
-                <div>
-                    <h2 class="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                        About Us
-                    </h2>
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <h1 class="text-white text-3xl sm:text-4xl lg:text-6xl font-extrabold text-center">
+                About Us
+            </h1>
+        </div>
+    </section>
+
+
+    <!-- Mission, Vision, Values Cards -->
+    <section class="py-12 px-4 sm:px-8 lg:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white shadow-lg rounded-xl p-6 relative flex flex-col h-full">
+            <div class="absolute text-8xl font-bold text-black/10 top-4 left-4 select-none">01</div>
+            <div class="text-center flex flex-col flex-grow">
+                <div
+                    class="w-12 h-12 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h2v12H4V6zm6 4h2v8h-2v-8zm6-6h2v14h-2V4z" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
                 </div>
+                <h3 class="text-xl font-bold mb-2 text-yellow-600">Values</h3>
+                <div class="w-12 h-1 mx-auto mb-4 bg-yellow-600 flex-shrink-0"></div>
+                <ul class="text-gray-600 text-sm space-y-2 text-left flex-grow">
+                    <li style="list-style-type:square">If users have difficulties, they must help with full sympathy.</li>
+                    <li style="list-style-type:square">Provide service to users with sincerity.</li>
+                    <li style="list-style-type:square">Accountability to users must provide service with full
+                        responsibility.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-6 relative flex flex-col h-full">
+            <div class="absolute text-8xl font-bold text-black/10 top-4 left-4 select-none">02</div>
+            <div class="text-center flex flex-col flex-grow">
+                <div class="w-12 h-12 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6l4 2h-6V7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-blue-600">Mission</h3>
+                <div class="w-12 h-1 mx-auto mb-4 bg-blue-600 flex-shrink-0"></div>
+                <ul class="text-gray-600 text-sm space-y-2 text-left flex-grow">
+                    <li style="list-style-type:square">It must be easy and simple to use for users.</li>
+                    <li style="list-style-type:square">It must be fast, smooth, and good for users.</li>
+                    <li style="list-style-type:square">It must be up to date with the times.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-6 relative flex flex-col h-full">
+            <div class="absolute text-8xl font-bold text-black/10 top-4 left-4 select-none">03</div>
+            <div class="text-center flex flex-col flex-grow">
+                <div
+                    class="w-12 h-12 mx-auto mb-4 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-indigo-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"
+                            fill="none" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-indigo-600">Vision</h3>
+                <div class="w-12 h-1 mx-auto mb-4 bg-indigo-600 flex-shrink-0"></div>
+                <ul class="text-gray-600 text-sm space-y-2 text-left flex-grow">
+                    <li style="list-style-type:square">We must successfully establish ourselves as a trusted IT Solution
+                        Provider for businesses.</li>
+                </ul>
             </div>
         </div>
     </section>
-        {{-- mission vision start --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-8 py-12 bg-white items-stretch">
-            <style>
-                .equal-card {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    height: 100%;
-                }
-            </style>
-            <div class="relative">
-                <div class="absolute inset-0 top-3 left-3 bg-white rounded-3xl border border-black/20"></div>
-                <div class="relative z-10 bg-[#4387AA] text-white rounded-3xl px-6 py-10 shadow-md equal-card">
-                    <div class="flex justify-center mb-5">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-center mb-2">Our Mission</h3>
-                    <div class="w-16 h-1 bg-white mx-auto mb-4 rounded"></div>
-                    <ul class="text-base font-light leading-relaxed tracking-wide space-y-3 list-none pl-6">
-                        <li
-                            class="relative before:absolute before:content-['•'] before:left-0 before:top-0 before:text-white before:text-lg before:leading-none pl-5 text-white/90">
-                            It must be easy and simple to use for users.
-                        </li>
-                        <li
-                            class="relative before:absolute before:content-['•'] before:left-0 before:top-0 before:text-white before:text-lg before:leading-none pl-5 text-white/90">
-                            It must be fast, smooth, and good for users.
-                        </li>
-                        <li
-                            class="relative before:absolute before:content-['•'] before:left-0 before:top-0 before:text-white before:text-lg before:leading-none pl-5 text-white/90">
-                            It must be up to date with the times.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute inset-0 top-3 left-3 bg-white rounded-3xl border border-black/20"></div>
-                <div class="relative z-10 bg-[#F39C12] text-white rounded-3xl px-6 py-10 shadow-md equal-card">
-                    <div class="flex justify-center mb-5">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-center mb-2">Our Vision</h3>
-                    <div class="w-16 h-1 bg-white mx-auto mb-4 rounded"></div>
-                    <ul class="text-base font-light leading-relaxed tracking-wide space-y-3 list-none pl-6">
-                        <li
-                            class="relative before:absolute before:content-['•'] before:left-0 before:top-0 before:text-white before:text-lg before:leading-none pl-5 text-white/90">
-                            We must successfully establish ourselves as a trusted IT Solution Provider for businesses.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute inset-0 top-3 left-3 bg-white rounded-3xl border border-black/20"></div>
-                <div class="relative z-10 bg-[#18A689] text-white rounded-3xl px-6 py-10 shadow-md equal-card">
-                    <div class="flex justify-center mb-5">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                d="M4 6h2v12H4V6zm6 4h2v8h-2v-8zm6-6h2v14h-2V4z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-center mb-2">Our Values</h3>
-                    <div class="w-16 h-1 bg-white mx-auto mb-4 rounded"></div>
-                    <ul class="text-base font-light leading-relaxed tracking-wide space-y-3 list-none pl-6">
-                        <li
-                            class="relative before:absolute before:content-['•'] before:left-0 before:top-0 before:text-white before:text-lg before:leading-none pl-5 text-white/90">
-                            If users have difficulties, they must help with full sympathy.
-                        </li>
-                        <li
-                            class="relative before:absolute before:content-['•'] before:left-0 before:top-0 before:text-white before:text-lg before:leading-none pl-5 text-white/90">
-                            Provide service to users with sincerity.
-                        </li>
-                        <li
-                            class="relative before:absolute before:content-['•'] before:left-0 before:top-0 before:text-white before:text-lg before:leading-none pl-5 text-white/90">
-                            Accountability to users must provide service with full responsibility.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        {{-- meet the team start --}}
+    <!-- Meet The Team -->
+    <section class="bg-green-50 py-12">
         <div>
             <div class="bg-[#f2fcf5] mt-10 sm:mt-20 md:mt-30 lg:mt-20 xl:mt-30">
                 <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl py-5 sm:py-8">Our Professional
@@ -172,51 +145,35 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="">
-            <div class="px-4 sm:px-6 lg:px-10">
-                <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl mt-10 mb-6 sm:my-12">
-                    How we build good to great business
-                </h1>
+    <section class="px-4 sm:px-6 lg:px-10 py-12">
+        <h2 class="text-center font-bold text-2xl lg:text-4xl mb-10">How we build good to great business</h2>
 
-                <!-- Background Image Section -->
-                <div class="relative bg-no-repeat bg-center bg-contain lg:bg-cover py-12 sm:py-16 lg:py-20">
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 max-w-7xl mx-auto px-2 sm:px-4">
-                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <img src="{{ asset('images/research.png') }}" alt="Research Icon"
-                                class="w-16 lg:w-24 mx-auto mb-4" />
-                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Research</h2>
-                            <p class="text-sm text-gray-700 leading-snug">
-                                We are constantly researching and exploring market needs.
-                            </p>
-                        </div>
-                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <img src="{{ asset('images/concepts.png') }}" alt="Concept and Design Icon"
-                                class="w-16 lg:w-24 mx-auto mb-4" />
-                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Concept & Design</h2>
-                            <p class="text-sm text-gray-700 leading-snug">
-                                Easy to use and have a modern technology advance.
-                            </p>
-                        </div>
-                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <img src="{{ asset('images/develop.png') }}" alt="Develop Icon"
-                                class="w-16 lg:w-24 mx-auto mb-4" />
-                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Develop & Test</h2>
-                            <p class="text-sm text-gray-700 leading-snug">
-                                Built and published with senior professionals.
-                            </p>
-                        </div>
-                        <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl shadow-md text-center">
-                            <img src="{{ asset('images/design.png') }}" alt="Production Icon"
-                                class="w-16 lg:w-24 mx-auto mb-4" />
-                            <h2 class="font-semibold text-lg md:text-xl mb-2 text-black">Production</h2>
-                            <p class="text-sm text-gray-700 leading-snug">
-                                Produced only with the best quality.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {{-- Research  --}}
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <img src="images/research.png" alt="Research Icon" class="w-16 lg:w-24 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-black mb-2">Research</h3>
+                <p class="text-gray-700 text-sm">We are constantly researching and exploring market needs.</p>
+            </div>
+            {{-- Concept & Design --}}
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <img src="images/concepts.png" alt="Concept & Design Icon" class="w-16 lg:w-24 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-black mb-2">Concept & Design</h3>
+                <p class="text-gray-700 text-sm">Easy to use and have a modern technology advance.</p>
+            </div>
+            {{-- Develop & Test --}}
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <img src="images/develop.png" alt="Develop & Test Icon" class="w-16 lg:w-24 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-black mb-2">Develop & Test</h3>
+                <p class="text-gray-700 text-sm">Built and published with senior professionals.</p>
+            </div>
+            {{-- Production --}}
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <img src="images/design.png" alt="Production Icon" class="w-16 lg:w-24 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-black mb-2">Production</h3>
+                <p class="text-gray-700 text-sm">Produced only with the best quality.</p>
             </div>
         </div>
     </section>

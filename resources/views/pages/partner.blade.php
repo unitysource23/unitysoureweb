@@ -18,32 +18,33 @@
 @endsection
 
 @section('content')
+    <section class="relative w-full overflow-hidden mb-10">
+        <img src="{{ asset('images/handshake2.jpg') }}" alt="Background"
+            class="absolute inset-0 w-full h-full object-cover z-0" />
+
+        <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+        <div
+            class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div>
+                <div class="font-bold text-3xl sm:text-4xl text-white mb-6 space-y-1 leading-tight">
+                    <p>Our Successful</p>
+                    <p>Partners'</p>
+                    <p>Business Industry</p>
+                </div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg list-disc list-inside text-white font-bold">
+                    <li>Academic HR</li>
+                    <li>Vocational IT</li>
+                    <li>Cloud Server Support</li>
+                    <li>ERP Solution Support</li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center">
+            </div>
+        </div>
+    </section>
+
     <section class="partner partner-background">
         <div class="partner-overlay px-4 py-8 sm:px-6 lg:px-10">
-            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 items-center overflow-hidden rounded-xl">
-                <div class="absolute inset-0 z-0">
-                    <img src="{{ asset('images/handshake2.jpg') }}" alt="Background"
-                        class="w-full h-full object-cover opacity-100" />
-                </div>
-                <div class="relative z-10 p-6">
-                    <div class="font-bold text-3xl sm:text-4xl mb-5">
-                        <p class="text-white">Our Successful</p>
-                        <p class="text-white">Partners'</p>
-                        <p class="text-white">Business Industry</p>
-                    </div>
-                    <ul class="list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4 text-primary text-lg mt-10">
-                        <li class="text-white font-bold">Academic HR</li>
-                        <li class="text-white font-bold">Vocational IT</li>
-                        <li class="text-white font-bold">Cloud Server Support</li>
-                        <li class="text-white font-bold">ERP Solution Support</li>
-                    </ul>
-                </div>
-
-                <div class="relative z-10 flex justify-center p-6">
-
-                </div>
-            </div>
-
             {{-- Our Partner Programme --}}
             <div class="mb-16">
                 <h1 class="font-bold text-2xl sm:text-3xl text-black text-center">Our Partner Program</h1>
