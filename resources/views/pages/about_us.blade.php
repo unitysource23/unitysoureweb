@@ -1,9 +1,27 @@
 @extends('layouts.master')
 @section('title', 'About')
 @section('css')
+    <style>
+        .arrow-shape {
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+        }
+    </style>
 @endsection
 @section('content')
-    <section class="about">
+    <section class="px-4 sm:px-6 lg:px-12 py-12">
+        <div class="relative w-full h-[200px] sm:h-[200px] md:h-[200px] lg:h-[250px] overflow-hidden rounded-2xl">
+            <img src="{{ asset('images/abt-us-banner.jpg') }}" alt="About Us Banner"
+                class="absolute inset-0 w-full h-full object-cover opacity-100 object-center">
+
+            <div class="relative z-10 flex items-center h-full px-6 sm:px-10 text-white">
+                <div>
+                    <h2 class="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        About Us
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
         {{-- mission vision start --}}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-8 py-12 bg-white items-stretch">
             <style>
