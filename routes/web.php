@@ -90,6 +90,11 @@ Route::prefix('our-products')->group(function () {
     });
 });
 
+Route::get('/privacy-policy', function () {
+    return view('/pages/privacy_and_policy');
+})->name('privacy.policy');
+
+
 Route::prefix('team')->group(function () {
 
     Route::controller(TeamController::class)->group(function () {
