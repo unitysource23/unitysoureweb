@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Privacy Policy for Unity HR - TermsFeed</title>
+    <title>Privacy Policy for Unity HR</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,19 +11,10 @@
 
     <meta name="robots" content="noindex" />
 
-    <meta property="og:title" content="Privacy Policy for Unity HR - TermsFeed" />
-    <meta property="og:image" content="https://www.termsfeed.com/public/images/meta_og_image_livelink.png" />
+    <meta property="og:title" content="Privacy Policy for Unity HR" />
+    <meta property="og:image" content="{{ asset('images/unityLogo.svg') }}" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="720" />
-
-    <meta property="og:url" content="https://www.termsfeed.com/live/a1cf4596-b320-4add-8c2d-8909b5972e8f" />
-    <meta property="og:site_name" content="TermsFeed" />
-
-    <link rel="canonical" href="https://www.termsfeed.com/live/a1cf4596-b320-4add-8c2d-8909b5972e8f" />
-
-
-
-
 </head>
 
 <body>
@@ -383,7 +374,7 @@
         }
     </script>
 
-    <script defer data-domain="termsfeed-livelink--production" data-api="/plausible/event" src="/plausible/script.js">
+    {{-- <script defer data-domain="termsfeed-livelink--production" data-api="/plausible/event" src="/plausible/script.js">
     </script>
 
     <script type="text/javascript">
@@ -391,7 +382,7 @@
         window.LCG_TRACKING_APPLICATION = "termsfeed-livelink";
         window.LCG_TRACKING_ENVIRONMENT = "production";
         window.LCG_TRACKING_EPOCH = "2020-e01";
-    </script>
+    </script> --}}
 
 
 
