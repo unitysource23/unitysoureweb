@@ -39,7 +39,7 @@
                 <!-- Text Section -->
                 <div class="flex flex-col pb-10 mb-20 items-start text-right w-full lg:w-1/2 px-4">
                 <h1 class="text-2xl lg:text-5xl font-bold leading-tight">
-                    we make all of your business needs
+                    {{ __('messages.tagline') }}
                 </h1>
                 </div>
             </div>
@@ -61,28 +61,26 @@
                 </div>
                 <div class="col-span-1 md:col-span-2 flex items-center">
                     <div>
-                        <h1 class="font-bold text-xl md:text-xl lg:text-3xl mb-2">Discover why many entrepreneurs
-                            choose</h1>
+                        <h1 class="font-bold text-xl md:text-xl lg:text-3xl mb-2">{{ __('messages.why_choose') }}</h1>
                         <span
-                            class="font-bold text-xl md:text-xl lg:text-3xl  from-primary to-[#39c457] text-black">Unity
-                            Source to build their business
+                            class="font-bold text-xl md:text-xl lg:text-3xl  from-primary to-[#39c457] text-black">{{ __('messages.unity_build') }}
                         </span>
                         <div class="grid grid-cols-2 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[70px]">
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">IT Solutions</h1>
+                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.it') }}</h1>
                             </div>
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">Business Solutions</h1>
+                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.business') }}</h1>
                             </div>
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">HR Solutions</h1>
+                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.hr') }}</h1>
                             </div>
                             <div class="border-l-4 px-3 py-2"
                                 style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">Service Solutions</h1>
+                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.service') }}</h1>
                             </div>
                         </div>
                     </div>
@@ -93,7 +91,7 @@
 
         {{-- Our Partner start   --}}
         <div class="mx-5 lg:mx-10 xl:mx-20 mt-10">
-            <h1 class="text-center font-bold text-xl lg:text-4xl mb-7 ">Our Major Clients</h1>
+            <h1 class="text-center font-bold text-xl lg:text-4xl mb-7 ">{{ __('messages.clients') }}</h1>
             <div class="grid grid-cols-2 gap-6 mt-10 px-4 sm:flex sm:flex-wrap sm:justify-center">
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c1.jpg" class="w-[100px]" alt="">
@@ -203,10 +201,8 @@
 
         <div class="bg-[#DEFFD8] mt-30" >
             <div class="text-center py-10">
-                <h1 class="font-semibold text-base lg:text-xl mb-2">Jump start your transformation journey now</h1>
-                <h1 class="text-[#797979] text-xs lg:text-sm">We provide anything you could ask for uniquely
-                    end to end
-                    solution provider as your trusted partner.</h1>
+                <h1 class="font-semibold text-base lg:text-xl mb-2">{{ __('messages.cta_title') }}</h1>
+                <h1 class="text-[#797979] text-xs lg:text-sm">{{ __('messages.cta_desc') }}</h1>
             </div>
         </div>
     </section>
