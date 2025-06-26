@@ -27,15 +27,15 @@
             class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div>
                 <div class="font-bold text-3xl sm:text-4xl text-white mb-6 space-y-1 leading-tight">
-                    <p>Our Successful</p>
-                    <p>Partners'</p>
-                    <p>Business Industry</p>
+                    <p>{{ __('messages.our_successful') }}</p>
+                    <p>{{ __('messages.partners') }}</p>
+                    <p>{{ __('messages.business_industry') }}</p>
                 </div>
                 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg list-disc list-inside text-white font-bold">
-                    <li>Academic HR</li>
-                    <li>Vocational IT</li>
-                    <li>Cloud Server Support</li>
-                    <li>ERP Solution Support</li>
+                    <li>{{ __('messages.academic_hr') }}</li>
+                    <li>{{ __('messages.vocational_it') }}</li>
+                    <li>{{ __('messages.cloud_server') }}</li>
+                    <li>{{ __('messages.erp_support') }}</li>
                 </ul>
             </div>
             <div class="flex justify-center items-center">
@@ -47,11 +47,11 @@
         <div class="partner-overlay px-4 py-8 sm:px-6 lg:px-10">
             {{-- Our Partner Programme --}}
             <div class="mb-16">
-                <h1 class="font-bold text-2xl sm:text-3xl text-black text-center">Our Partner Program</h1>
+                <h1 class="font-bold text-2xl sm:text-3xl text-black text-center">{{ __('messages.partner_program') }}</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
                     <div class="flex items-center">
                         <div>
-                            <h2 class="font-bold text-lg lg:text-3xl text-black mb-6">Benefits</h2>
+                            <h2 class="font-bold text-lg lg:text-3xl text-black mb-6">{{ __('messages.benefits') }}</h2>
                             <div class="flex flex-col gap-6">
                                 <div class="flex items-start gap-3">
                                     <div
@@ -59,7 +59,7 @@
                                         <i class="fa-solid fa-check text-xs sm:text-sm md:text-base"></i>
                                     </div>
                                     <p class="text-black text-base text-left">
-                                        To achieve mutual benefit in both businesses
+                                        {{ __('messages.benefit_1') }}
                                     </p>
                                 </div>
                                 <div class="flex items-start gap-3">
@@ -68,7 +68,7 @@
                                         <i class="fa-solid fa-check text-xs sm:text-sm md:text-base"></i>
                                     </div>
                                     <p class="text-black text-base text-left">
-                                        To help businesses run more efficiently with the help of technology
+                                        {{ __('messages.benefit_2') }}
                                     </p>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                             <div class="p-6">
                                 <img src="images/Partner 1.png" alt="IT STUDENTS"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
-                                <h2 class="text-xl font-semibold text-gray-800">IT STUDENTS</h2>
+                                <h2 class="text-xl font-semibold text-gray-800">{{ __('messages.it_students') }}</h2>
                             </div>
                         </div>
                         <div
@@ -97,7 +97,7 @@
                             <div class="p-6">
                                 <img src="images/Partner 2.png" alt="ODOO ERP"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
-                                <h2 class="text-xl font-semibold text-gray-800">ODOO ERP</h2>
+                                <h2 class="text-xl font-semibold text-gray-800">{{ __('messages.odoo_erp') }}</h2>
                             </div>
                         </div>
                         <div
@@ -105,7 +105,7 @@
                             <div class="p-6">
                                 <img src="images/Partner 3.png" alt="HR STUDENTS"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
-                                <h2 class="text-xl font-semibold text-gray-800">HR STUDENTS</h2>
+                                <h2 class="text-xl font-semibold text-gray-800">{{ __('messages.hr_students') }}</h2>
                             </div>
                         </div>
                         <div
@@ -113,7 +113,7 @@
                             <div class="p-6">
                                 <img src="images/Partner 4.png" alt="CLOUD SERVERS"
                                     class="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 object-cover mx-auto mb-6 shadow-lg" />
-                                <h2 class="text-xl font-semibold text-gray-800">CLOUD SERVERS</h2>
+                                <h2 class="text-xl font-semibold text-gray-800">{{ __('messages.cloud_servers') }}</h2>
                             </div>
                         </div>
                     </div>

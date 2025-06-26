@@ -7,7 +7,7 @@
         <div class="bg-[#f2fcf5] mt-5 sm:mt-8 lg:mt-10">
             <div class="mx-4 sm:mx-6 lg:mx-20">
                 <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl py-5 sm:py-8">
-                    Get Started with Our Products
+                    {{ __('messages.our_products_title') }}
                 </h1>
 
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6 py-5 sm:py-8">
@@ -17,12 +17,11 @@
                     </div>
                     <div class="flex-1 flex justify-center">
                         <div class="flex flex-col gap-3 text-center">
-                            <h2 class="font-semibold text-lg sm:text-xl md:text-2xl">Smart Life</h2>
-                            <h3 class="font-semibold text-primary text-sm sm:text-base md:text-lg">Hire Purchase Services
-                            </h3>
+                            <h2 class="font-semibold text-lg sm:text-xl md:text-2xl">{{ __('messages.smart_life') }}</h2>
+                            <h3 class="font-semibold text-primary text-sm sm:text-base md:text-lg">{{ __('messages.hire_purchase') }}</h3>
                             <button
                                 class="bg-primary w-40 sm:w-56 text-white rounded-full px-4 sm:px-5 py-2 text-sm sm:text-lg">
-                                Use Demo
+                                {{ __('messages.use_demo') }}
                             </button>
                         </div>
                     </div>
@@ -40,12 +39,11 @@
                     </div>
                     <div class="flex-1 flex justify-center">
                         <div class="flex flex-col gap-3 text-center">
-                            <h2 class="font-semibold text-lg sm:text-xl md:text-2xl">Smart Life</h2>
-                            <h3 class="font-semibold text-primary text-sm sm:text-base md:text-lg">Hire Purchase Services
-                            </h3>
+                            <h2 class="font-semibold text-lg sm:text-xl md:text-2xl">{{ __('messages.smart_life') }}</h2>
+                            <h3 class="font-semibold text-primary text-sm sm:text-base md:text-lg">{{ __('messages.hire_purchase') }}</h3>
                             <button
                                 class="bg-primary w-40 sm:w-56 text-white rounded-full px-4 sm:px-5 py-2 text-sm sm:text-lg">
-                                Use Demo
+                                {{ __('messages.use_demo') }}
                             </button>
                         </div>
                     </div>
