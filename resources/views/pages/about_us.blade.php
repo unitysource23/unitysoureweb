@@ -1,19 +1,18 @@
 @extends('layouts.master')
 @section('title', 'About')
 @section('content')
-    <section class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
+    <section class="relative w-full h-[30vh] sm:h-[40vh] lg:h-[50vh] overflow-hidden">
         <img src="{{ asset('images/business-people.jpg') }}" alt="About Us Banner"
-            class="absolute inset-0 w-full h-full object-cover object-center" />
+            class="absolute inset-0 w-full h-full object-cover object-center z-0" />
 
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
 
         <div class="relative z-10 flex items-center justify-center h-full">
-            <h1 class="text-white text-3xl sm:text-4xl lg:text-6xl font-extrabold text-center">
+            <h1 class="text-white text-2xl sm:text-3xl lg:text-4xl font-extrabold text-center">
                 {{ __('messages.about_us_title') }}
             </h1>
         </div>
     </section>
-
 
     <!-- Mission, Vision, Values Cards -->
     <section class="py-12 px-4 sm:px-8 lg:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,7 +82,8 @@
     <section class="bg-green-50 py-12">
         <div>
             <div class="bg-[#f2fcf5] mt-10 sm:mt-20 md:mt-30 lg:mt-20 xl:mt-30">
-                <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl py-5 sm:py-8">{{ __('messages.our_team') }}</h1>
+                <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl py-5 sm:py-8">
+                    {{ __('messages.our_team') }}</h1>
                 <div class="swiper mySwiper2" style="max-height: 400px;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide px-2 sm:px-4">
