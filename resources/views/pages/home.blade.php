@@ -8,41 +8,50 @@
     <section class="home ">
         {{--  hero  start   --}}
         <div class="w-full mt-5">
-            <!-- Content Section -->
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-10 w-full max-w-[1300px] mx-auto px-4 mb-0">
-                <!-- Logo Section -->
-                <div class="flex flex-row flex-wrap justify-center gap-6 w-full lg:w-1/2 mt-6 lg:mb-0">
-                <!-- logos -->
-                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
-                        <img src="images/d1.jpg" class="w-[100px]" alt="">
-                    </div>
-                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
-                        <img src="images/d2.jpg" class="w-[100px]" alt="">
-                    </div>
-                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
-                        <img src="images/d3.jpg" class="w-[100px]" alt="">
-                    </div>
-                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
-                        <img src="images/d4.jpg" class="w-[100px]" alt="">
-                    </div>
-                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
-                        <img src="images/d5.png" class="w-[130px]" alt="">
-                    </div>
-                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
-                        <img src="images/d6.png" class="w-[100px]" alt="">
-                    </div>
-                    <div class="bg-white w-[180px] h-[100px] rounded-[35px] flex justify-center items-center shadow-xl">
-                        <img src="images/d7.png" class="w-[100px]" alt="">
-                    </div>
-                </div>
+           <!-- Content Section -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-10 w-full max-w-[1300px] mx-auto px-4 mb-0">
+    
+    <div class="grid grid-cols-2 lg:grid-cols-4 justify-items-center gap-6 w-full lg:w-1/2 mt-6 lg:mb-0">
+        
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/d1.jpg" class="w-[100px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/d2.jpg" class="w-[103px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/d33.jpg" class="w-[120px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/d44.jpg" class="w-[100px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/d5.png" class="w-[100px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/d6.png" class="w-[100px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/d7.png" class="w-[100px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/unityhr.png" class="w-[80px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl lg:col-start-2">
+            <img src="images/pos.png" class="w-[60px]" alt="">
+        </div>
+        <div class="bg-white w-full h-[120px] rounded-[35px] flex justify-center items-center shadow-xl">
+            <img src="images/mobile.png" class="w-[80px]" alt="">
+        </div>
+    </div>
 
-                <!-- Text Section -->
-                <div class="flex flex-col pb-10 mb-20 items-start text-right w-full lg:w-1/2 px-4">
-                <h1 class="text-2xl lg:text-5xl font-bold leading-tight">
-                    {{ __('messages.tagline') }}
-                </h1>
-                </div>
-            </div>
+    <!-- Text Section --> 
+    <div class="flex flex-col pb-10 mb-20 items-start text-right w-full lg:w-1/2 px-4"> 
+        <h1 class="text-2xl lg:text-[43px] font-bold leading-normal lg:leading-[1.7]"> 
+            {{ __('messages.tagline') }} 
+        </h1> 
+    </div>
+</div>
 
             <!-- Background Image Section -->
             <div class="w-full mt-[-90px]">
@@ -99,9 +108,9 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c2.jpg" class="w-[100px]" alt="">
                 </div>
-                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                <!--<div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c3.jpg" class="w-[100px]" alt="">
-                </div>
+                </div>-->
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c4.jpg" class="w-[100px]" alt="">
                 </div>
@@ -117,9 +126,9 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c8.jpg" class="w-[100px]" alt="">
                 </div>
-                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                <!--<div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c9.jpg" class="w-[100px]" alt="">
-                </div>
+                </div>-->
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c10.jpg" class="w-[100px]" alt="">
                 </div>
@@ -132,9 +141,9 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c13.jpg" class="w-[100px]" alt="">
                 </div>
-                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                <!--<div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c14.jpg" class="w-[100px]" alt="">
-                </div>
+                </div>-->
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c15.jpg" class="w-[100px]" alt="">
                 </div>
@@ -147,9 +156,9 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c18.jpg" class="w-[100px]" alt="">
                 </div>
-                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                <!--<div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c19.jpg" class="w-[100px]" alt="">
-                </div>
+                </div>-->
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c20.jpg" class="w-[100px]" alt="">
                 </div>
@@ -162,9 +171,9 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c23.png" class="w-[100px]" alt="">
                 </div>
-                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                <!--<div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c24.jpg" class="w-[100px]" alt="">
-                </div>
+                </div>-->
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c25.jpg" class="w-[100px]" alt="">
                 </div>
@@ -180,18 +189,18 @@
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c29.jpg" class="w-[100px]" alt="">
                 </div>
-                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                <!--<div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c30.jpg" class="w-[100px]" alt="">
-                </div>
+                </div>-->
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c31.jpg" class="w-[100px]" alt="">
                 </div>
                 <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c32.jpg" class="w-[100px]" alt="">
                 </div>
-                <div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
+                <!--<div class="bg-white w-[150px] h-[80px] rounded-[35px] flex justify-center items-center">
                     <img src="images/c33.jpg" class="w-[100px]" alt="">
-                </div>
+                </div>-->
             </div>
 
             <div class="text-center mt-10 mb-10">
@@ -199,12 +208,13 @@
 
         </div>
 
-        <div class="bg-[#DEFFD8] mt-30" >
+       <!-- <div class="bg-[#DEFFD8] mt-30" >
             <div class="text-center py-10">
                 <h1 class="font-semibold text-base lg:text-xl mb-2">{{ __('messages.cta_title') }}</h1>
                 <h1 class="text-[#797979] text-xs lg:text-sm">{{ __('messages.cta_desc') }}</h1>
             </div>
         </div>
+        -->
     </section>
 @endsection
 @section('script')

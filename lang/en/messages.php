@@ -24,6 +24,7 @@ return [
     'vocational_it' => 'Vocational IT',
     'cloud_server' => 'Cloud Server Support',
     'erp_support' => 'ERP Solution Support',
+    're_solution' => 'Reciruitment Solution',
     'partner_program' => 'Our Partner Program',
     'benefits' => 'Benefits',
     'benefit_1' => 'To achieve mutual benefit in both businesses',
@@ -32,6 +33,7 @@ return [
     'odoo_erp' => 'ODOO ERP',
     'hr_students' => 'HR STUDENTS',
     'cloud_servers' => 'CLOUD SERVERS',
+    're_service' => 'RECIRUITMENT SERVICE',
 
     //about_us
     'about_us_title' => 'About Us',
@@ -41,6 +43,8 @@ return [
     'value_1' => 'If users have difficulties, they must help with full sympathy.',
     'value_2' => 'Provide service to users with sincerity.',
     'value_3' => 'Accountability to users must provide service with full responsibility.',
+    'value_4' => 'Promote teamwork and effective collaboration in our work.',
+    'value_5' => 'Continuously strive to improve the quality of our services.',
     'mission_1' => 'It must be easy and simple to use for users.',
     'mission_2' => 'It must be fast, smooth, and good for users.',
     'mission_3' => 'It must be up to date with the times.',
