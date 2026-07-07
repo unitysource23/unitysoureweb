@@ -5,7 +5,8 @@ return [
     'partnership' => 'Partnership',
     'products' => 'Our Products',
     'about_us' => 'About Us',
-    'tagline' => 'we make all of your business needs',
+    'tagline' => 'we make all of your',
+    'tagline1' => 'business needs',
     'why_choose' => 'Discover why many entrepreneurs choose',
     'unity_build' => 'Unity Source to build their business',
     'it' => 'IT Solutions',
@@ -15,6 +16,12 @@ return [
     'clients' => 'Our Major Clients',
     'cta_title' => 'Jump start your transformation journey now',
     'cta_desc' => 'We provide anything you could ask for uniquely end to end solution provider as your trusted partner.',
+    'text1' => ' We provide powerful and easy-to-use software solutions to help your business manage smarter, faster and better.',
+    'contact' => 'Contact Us',
+    'explore' => 'Explore Our Products',
+    'local' => 'Local Support',
+    'here' => 'We are here for you',
+    'secure' => 'Secure',
 
     //partnership
     'our_successful' => 'Our Successful',
@@ -63,6 +70,7 @@ return [
     //our_products
     'our_products_title' => 'Get Started with Our Products',
     'smart_life' => 'Smart Life',
+    'mobile_shop' => 'Mobile Shop',
     'hire_purchase' => 'Hire Purchase Services',
     'use_demo' => 'Use Demo',
 
