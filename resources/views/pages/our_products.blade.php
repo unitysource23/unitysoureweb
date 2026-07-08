@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<section class="our-products">
+<section class="our-products font-poppins">
     <div class="bg-[#f2fcf5]">
         <div class="mx-4 sm:mx-6 lg:mx-20">
             

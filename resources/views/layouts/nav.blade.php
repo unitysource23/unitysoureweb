@@ -1,7 +1,7 @@
 {{-- nav start --}}
-<nav class="py-4 px-4 bg-white md:px-10 text-sm sticky top-0 shadow-sm z-[99999] ">
+<nav class="py-4 px-4 bg-white md:px-10 text-sm sticky top-0 shadow-sm z-[99999] font-poppins">
     <div class="flex items-center justify-between h-9 px-10">
-        <div style="display: flex; justify-content: flex-end; align-items: center; padding-right: 50px;">
+        <div style="display: flex; justify-content: flex-end; align-items: center; padding-left:60px;">
             <img src="{{ asset('images/unityLogo.png') }}" style="height: 65px; width: auto;" alt="Unity Logo">
         </div>
         <div class="hidden sm:block">

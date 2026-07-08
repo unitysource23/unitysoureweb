@@ -17,7 +17,7 @@
 @endsection
 
 @section('content')
-<section class="relative w-full overflow-hidden mb-10 h-[250px] sm:h-[300px] md:h-[350px] lg:h-[420px]">
+<section class="relative w-full overflow-hidden mb-10 h-[250px] sm:h-[300px] md:h-[350px] lg:h-[420px] font-poppins">
 
     <img src="{{ asset('images/handshake2.jpg') }}"
          alt="Background"
@@ -79,7 +79,7 @@
 
 </section>
 
-    <section class="partner partner-background">
+    <section class="partner partner-background font-poppins">
         <div class="partner-overlay px-4 py-8 sm:px-6 lg:px-10">
             {{-- Our Partner Programme --}}
             <div class="mb-16">
@@ -117,7 +117,7 @@
             </div>
 
             {{-- Partners --}}
-<div class="py-20 px-4 sm:px-10 bg-slate-50"> 
+<div class="py-20 px-4 sm:px-10 bg-slate-50 font-poppins"> 
     <div class="max-w-7xl mx-auto">
         
         <div class="text-center mb-14">

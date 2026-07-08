@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'About')
 @section('content')
-    <section class="relative w-full h-[30vh] sm:h-[40vh] lg:h-[50vh] overflow-hidden">
+    <section class="relative w-full h-[30vh] sm:h-[40vh] lg:h-[50vh] overflow-hidden font-poppins">
         <img src="{{ asset('images/business-people.jpg') }}" alt="About Us Banner"
             class="absolute inset-0 w-full h-full object-cover object-center z-0" />
 
@@ -15,7 +15,7 @@
     </section>
 
 <!-- Mission | Vision | Values -->
-<section class="relative py-28 overflow-hidden bg-white">
+<section class="relative py-28 overflow-hidden bg-white font-poppins">
 
     <div class="absolute top-[-200px] right-[-100px] w-[600px] h-[600px] bg-green-100/50 rounded-full blur-[140px] pointer-events-none"></div>
     <div class="absolute bottom-[-200px] left-[-100px] w-[500px] h-[500px] bg-green-50/60 rounded-full blur-[120px] pointer-events-none"></div>
@@ -176,7 +176,7 @@
 </section>
 
     <!-- Meet The Team -->
-    <section class="bg-green-50 py-12">
+    <section class="bg-green-50 py-12 font-poppins">
         <div>
             <div class="bg-[#f2fcf5] mt-10 sm:mt-20 md:mt-30 lg:mt-20 xl:mt-30">
                 <h1 class="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl py-5 sm:py-8">
@@ -241,7 +241,7 @@
         </div>
     </section>
 
-    <section class="px-4 sm:px-6 lg:px-10 py-12">
+    <section class="px-4 sm:px-6 lg:px-10 py-12 font-poppins">
         <h2 class="text-center font-bold text-2xl lg:text-4xl mb-10">{{ __('messages.how_build') }}</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
