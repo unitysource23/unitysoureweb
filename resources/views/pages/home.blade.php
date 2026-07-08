@@ -6,7 +6,7 @@
 @section('content')
 
 <section class="home ">
-<section class="relative overflow-hidden bg-[#fafafa] font-sans">
+<section class="relative overflow-hidden bg-[#fafafa] font-poppins">
 
     <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-green-100 rounded-full blur-3xl opacity-40"></div>
 
