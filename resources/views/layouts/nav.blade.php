@@ -7,10 +7,9 @@
         <div class="hidden sm:block">
             <div class="flex items-center gap-5">
                 <ul class="flex items-center gap-10 text-black text-base font-medium">
-                    <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-green-600 font-semibold' : '' }}">{{ __('messages.home') }}</a></li>
-                    <li><a href="{{ route('partner') }}" class="{{ request()->routeIs('partner') ? 'text-green-600 font-semibold' : '' }}">{{ __('messages.partnership') }}</a></li>
-                    <li><a href="{{ route('our_products') }}" class="whitespace-nowrap {{ request()->routeIs('our_products') ? 'text-green-600 font-semibold' : '' }}">{{ __('messages.products') }}</a></li>
-                    <li><a href="{{ route('about_us') }}" class="whitespace-nowrap {{ request()->routeIs('about_us') ? 'text-green-600 font-semibold' : '' }}">{{ __('messages.about_us') }}</a></li>
+                    <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-green-600 font-bold underline underline-offset-[16px]' : '' }}">{{ __('messages.home') }}</a></li>               <li><a href="{{ route('partner') }}" class="{{ request()->routeIs('partner') ? 'text-green-600 font-bold' : '' }}">{{ __('messages.partnership') }}</a></li>
+                    <li><a href="{{ route('our_products') }}" class="whitespace-nowrap {{ request()->routeIs('our_products') ? 'text-green-600 font-bold' : '' }}">{{ __('messages.products') }}</a></li>
+                    <li><a href="{{ route('about_us') }}" class="whitespace-nowrap {{ request()->routeIs('about_us') ? 'text-green-600 font-bold' : '' }}">{{ __('messages.about_us') }}</a></li>
                 </ul>
 
                 @php

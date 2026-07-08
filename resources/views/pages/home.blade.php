@@ -13,7 +13,9 @@
     <div class="max-w-7xl mx-auto px-6 pt-20 pb-12">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-
+            <span class="inline-block bg-primary/10 text-primary font-semibold text-xs sm:text-sm px-4 py-2 rounded-full uppercase tracking-wider mb-6">
+                 Smart Software Solution
+            </span>
                 <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight sm:leading-tight md:leading-[1.35] lg:leading-[1.35] mb-12">
                     {{ __('messages.tagline') }} <br>
                     <span class="text-green-600 inline-block mt-1 sm:mt-2 md:mt-3">{{ __('messages.tagline1') }}</span>
@@ -27,8 +29,8 @@
                     <a href="#" class="px-6 py-3 rounded-xl bg-green-600 text-white font-semibold hover:bg-green-700 transition-colors">
                         {{ __('messages.explore') }} →
                     </a>
-                    <a href="#" class="px-6 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-colors flex items-center gap-2">
-                       {{ __('messages.contact') }}  <span>📞</span>
+                    <a href="#" class="px-6 py-3 rounded-xl border border-green-500 text-gray-700 font-semibold hover:bg-green-50 hover:border-green-600 transition-colors flex items-center gap-2">
+                        {{ __('messages.contact') }} <span><i class="fa-solid fa-phone" style="color: #22c55e;"></i></span>
                     </a>
                 </div>
 
@@ -36,10 +38,10 @@
     
                     <div class="flex items-start gap-4">
                         <div class="flex items-center justify-center w-10 h-10 rounded-xl bg-green-100 text-green-600 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636a9 9 0 010 12.728m0 0l-1.414-1.414m1.414 1.414L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-1.414-1.414M12 18.75V21m-6-11.25a6 6 0 0112 0v1.5H6v-1.5zm-3 6.75h18" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM9 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 24px; height: 24px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 0 0-9 9v4.5A2.5 2.5 0 0 0 5.5 19h1a2.5 2.5 0 0 0 2.5-2.5V14a2.5 2.5 0 0 0-2.5-2.5H5.1A7 7 0 0 1 12 5a7 7 0 0 1 6.9 6.5h-1.4A2.5 2.5 0 0 0 15 14v2.5a2.5 2.5 0 0 0 2.5 2.5h1a2.5 2.5 0 0 0 2.5-2.5V12a9 9 0 0 0-9-9Z" />
                             </svg>
+
                         </div>
                         <div> 
                             <h4 class="font-bold text-gray-800 text-sm md:text-base whitespace-nowrap">{{ __('messages.local') }} </h4>
@@ -96,7 +98,7 @@
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-6 my-10">
+    <div class="max-w-7xl mx-auto">
         <div class="bg-white rounded-[30px] shadow-sm border border-gray-100/80 py-8 px-10 grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center items-center">
             
             <div class="text-center md:text-left flex items-center gap-4">
@@ -153,7 +155,66 @@
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-6 pt-12 pb-24">
+      {{--  map two start   --}}
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-16 font-poppins">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
+        
+        <div class="col-span-1 flex justify-center">
+            <div class="relative w-full max-w-md md:max-w-full">
+                <img src="{{ asset('images/country-map-1.jpg') }}" 
+                     class="w-full h-auto max-h-[500px] object-contain mx-auto" 
+                     alt="Country Map">
+            </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 flex flex-col justify-center">
+            <div>
+               <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl text-gray-800 leading-tight md:leading-loose lg:leading-[1.55] mb-10">
+                {{ __('messages.why_choose') }}
+                </h1>
+                <p class="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800">
+                    {{ __('messages.unity_build') }}
+                </p>
+                
+                <div class="grid grid-cols-2 gap-x-6 gap-y-8 lg:gap-y-16 mt-8 lg:mt-13">
+                    
+                    <div class="border-l-4 px-4 py-2 border-transparent"
+                         style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
+                        <h2 class="font-bold text-base md:text-xl lg:text-2xl text-gray-800">
+                            {{ __('messages.it') }}
+                        </h2>
+                    </div>
+                    
+                    <div class="border-l-4 px-4 py-2 border-transparent"
+                         style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
+                        <h2 class="font-bold text-base md:text-xl lg:text-2xl text-gray-800">
+                            {{ __('messages.business') }}
+                        </h2>
+                    </div>
+                    
+                    <div class="border-l-4 px-4 py-2 border-transparent"
+                         style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
+                        <h2 class="font-bold text-base md:text-xl lg:text-2xl text-gray-800">
+                            {{ __('messages.hr') }}
+                        </h2>
+                    </div>
+                    
+                    <div class="border-l-4 px-4 py-2 border-transparent"
+                         style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
+                        <h2 class="font-bold text-base md:text-xl lg:text-2xl text-gray-800">
+                            {{ __('messages.service') }}
+                        </h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="max-w-7xl mx-auto pb-20">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <span class="text-base font-bold text-green-600 uppercase tracking-widest block mb-3">{{ __('messages.our') }}</span>
             <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 leading-tight sm:leading-tight md:leading-[1.35]">{{ __('messages.complete') }}</h2>
@@ -315,7 +376,7 @@
         </div>
     </div>
 
-    <div class="px-4 max-w-7xl mx-auto text-center bg-gray-50/30">
+    <div class="max-w-7xl mx-auto text-center bg-gray-50/30">
     <div class="mb-12 max-w-2xl mx-auto">
         <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-7 tracking-tight">
             {{ __('messages.choose') }}
@@ -380,43 +441,6 @@
 </div>
 
 </section>
-        {{--  map two start   --}}
-        <div class="mx-10 xl:h-screen mt-20 font-poppins">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-start items-start">
-                <div class="col-span-1 md:col-span-1">
-                    <div class="relative">
-                        <img src="{{ asset('images/country-map-1.jpg') }}" class="h-[650px] mx-auto" alt="">
-                    </div>
-                </div>
-                <div class="col-span-1 md:col-span-2 flex items-center font-poppins">
-                    <div>
-                        <h1 class="font-bold text-xl md:text-xl lg:text-3xl mb-2">{{ __('messages.why_choose') }}</h1>
-                        <span
-                            class="font-bold text-xl md:text-xl lg:text-3xl  from-primary to-[#39c457] text-black">{{ __('messages.unity_build') }}
-                        </span>
-                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-10 gap-y-10 lg:gap-y-32 mt-[70px]">
-                            <div class="border-l-4 px-3 py-2"
-                                style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.it') }}</h1>
-                            </div>
-                            <div class="border-l-4 px-3 py-2"
-                                style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.business') }}</h1>
-                            </div>
-                            <div class="border-l-4 px-3 py-2"
-                                style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.hr') }}</h1>
-                            </div>
-                            <div class="border-l-4 px-3 py-2"
-                                style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
-                                <h1 class="font-bold text-lg lg:text-3xl">{{ __('messages.service') }}</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
         {{-- Our Partner start   --}}
         <div class="mx-5 lg:mx-10 xl:mx-20 mt-10 font-poppins">
