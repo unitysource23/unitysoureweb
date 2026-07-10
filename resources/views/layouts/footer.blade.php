@@ -1,122 +1,77 @@
-<footer class="bg-[#236734] text-white font-poppins">
-    <div class="max-w-7xl mx-auto px-6 py-14">
+<footer class="bg-[#236734] text-white font-poppins border-t border-green-800">
+    <div class="max-w-7xl mx-auto px-6 py-10 md:py-12">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
 
-            <!-- Company -->
-            <div>
-                <h2 class="text-xl font-semibold mb-6 border-l-4 border-white pl-3">
-                {{ __('messages.cta_title') }}
+            <div class="flex flex-col">
+                <h2 class="text-xl font-semibold mb-6 border-l-4 border-white pl-3 tracking-wide">
+                    {{ __('messages.cta_title') }}
                 </h2>
-
-                <p class="text-green-100 leading-8">
+                <p class="text-green-100/90 leading-relaxed text-sm md:text-base">
                     {{ __('messages.cta_desc') }}
                 </p>
             </div>
 
-            <!-- Address -->
-            <div>
-                <h3 class="text-xl font-semibold mb-6 border-l-4 border-white pl-3">
+            <div class="flex flex-col">
+                <h3 class="text-xl font-semibold mb-6 border-l-4 border-white pl-3 tracking-wide">
                     {{ __('messages.address') }}
                 </h3>
 
                 <div class="flex items-start gap-4">
-
-                    <div
-                        class="w-12 h-12 rounded-lg bg-green-600 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-location-dot text-xl"></i>
+                    <div class="w-11 h-11 rounded-lg bg-green-600 flex items-center justify-center flex-shrink-0 shadow-inner">
+                        <i class="fas fa-location-dot text-lg"></i>
                     </div>
-
-                    <div class="text-green-100 leading-7">
+                    <div class="text-green-100/90 leading-relaxed text-sm md:text-base">
                         {{ __('messages.address_line1') }}<br>
                         {{ __('messages.address_line2') }}<br>
                         {{ __('messages.address_line3') }}
                     </div>
-
                 </div>
             </div>
 
-            <!-- Contact -->
-            <div>
-
-                <h3 class="text-xl font-semibold mb-6 border-l-4 border-white pl-3">
+            <div class="flex flex-col sm:col-span-2 lg:col-span-1">
+                <h3 class="text-xl font-semibold mb-6 border-l-4 border-white pl-3 tracking-wide">
                     {{ __('messages.contact') }}
                 </h3>
 
-                <div class="space-y-5">
-
-                    <div class="flex items-center gap-4">
-
-                        <div class="w-11 h-11 rounded-lg bg-green-600 flex items-center justify-center">
-                            <i class="fas fa-phone"></i>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-11 h-11 rounded-lg bg-green-600 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:bg-green-500 transition-colors duration-200">
+                            <i class="fas fa-phone text-sm"></i>
                         </div>
-
-                        <div>
-                            <p>+95 976 50 70 160</p>
-                            
-                        </div>
-
+                        <a href="tel:+959765070160" class="text-green-100/90 text-sm md:text-base hover:text-white transition-colors duration-200">
+                            +95 976 50 70 160
+                        </a>
                     </div>
 
                     <div class="flex items-center gap-4">
-
-                        <div class="w-11 h-11 rounded-lg bg-green-600 flex items-center justify-center">
-                            <i class="fas fa-clock"></i>
+                        <div class="w-11 h-11 rounded-lg bg-green-600 flex items-center justify-center flex-shrink-0 shadow-inner">
+                            <i class="fas fa-clock text-sm"></i>
                         </div>
-
-                        <p>{{ __('messages.working_hours') }}</p>
-
+                        <p class="text-green-100/90 text-sm md:text-base">
+                            {{ __('messages.working_hours') }}
+                        </p>
                     </div>
 
-                    <div class="flex items-center gap-4">
-
-                        <div class="w-11 h-11 rounded-lg bg-green-600 flex items-center justify-center">
-                            <i class="fas fa-envelope"></i>
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-11 h-11 rounded-lg bg-green-600 flex items-center justify-center flex-shrink-0 shadow-inner group-hover:bg-green-500 transition-colors duration-200">
+                            <i class="fas fa-envelope text-sm"></i>
                         </div>
-
-                        <a href="mailto:unitysourceteam@gmail.com"
-                            class="hover:underline break-all">
+                        <a href="mailto:unitysourceteam@gmail.com" class="text-green-100/90 text-sm md:text-base hover:underline break-all group-hover:text-white transition-colors duration-200">
                             unitysourceteam@gmail.com
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
 
         </div>
 
-        <!-- Divider -->
-        <div class="border-t border-green-500 mt-12 pt-6">
-
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-
-                <p class="text-green-200 text-sm">
-                    © {{ date('Y') }} Unity Source. All Rights Reserved.
+        <div class="border-t border-green-700/60 mt-12 pt-6">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-green-200/80 text-xs md:text-sm text-center sm:text-left">
+                    &copy; {{ date('Y') }} Unity Source. All Rights Reserved.
                 </p>
-
-                <div class="flex gap-4">
-
-                    <a href="#"
-                        class="w-10 h-10 rounded-full border border-green-300 flex items-center justify-center hover:bg-white hover:text-[#236734] transition">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#"
-                        class="w-10 h-10 rounded-full border border-green-300 flex items-center justify-center hover:bg-white hover:text-[#236734] transition">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-
-                    <a href="#"
-                        class="w-10 h-10 rounded-full border border-green-300 flex items-center justify-center hover:bg-white hover:text-[#236734] transition">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-
-                </div>
-
             </div>
-
         </div>
 
     </div>

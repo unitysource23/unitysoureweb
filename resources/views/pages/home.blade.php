@@ -6,14 +6,14 @@
 @section('content')
 
 <section class="home font-poppins">
-<section class="relative overflow-hidden bg-[#fafafa] font-poppins">
+<section class="relative overflow-hidden bg-[white] font-poppins">
 
     <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-green-100 rounded-full blur-3xl opacity-40"></div>
 
     <div class="max-w-7xl mx-auto px-6 pt-20 pb-12">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-            <span class="inline-block bg-primary/10 text-primary font-semibold text-xs sm:text-sm px-4 py-2 rounded-full uppercase tracking-wider mb-6">
+            <span class="inline-block bg-primary/10 text-primary font-semibold text-xs sm:text-xs px-4 py-2 rounded-full uppercase tracking-wider mb-6">
                  Smart Software Solution
             </span>
                 <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight sm:leading-tight md:leading-[1.35] lg:leading-[1.35] mb-12">
@@ -176,7 +176,7 @@
                     {{ __('messages.unity_build') }}
                 </p>
                 
-                <div class="grid grid-cols-2 gap-x-6 gap-y-8 lg:gap-y-16 mt-8 lg:mt-13">
+                <div class="grid grid-cols-2 gap-x-6 gap-y-8 lg:gap-y-16 mt-8 lg:mt-20">
                     
                     <div class="border-l-4 px-4 py-2 border-transparent"
                          style="border-image: linear-gradient(to bottom, #29DC89, #ACDF8D) 1;">
