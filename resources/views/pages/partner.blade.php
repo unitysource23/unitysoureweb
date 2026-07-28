@@ -20,47 +20,69 @@
 <section class="relative w-full overflow-hidden bg-slate-50 font-poppins">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center pt-2 sm:pt-4">
-            
-            <!-- Left Content Column -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start pt-2 sm:pt-4">
+
+            <!-- Left Content -->
             <div class="lg:col-span-6 text-center lg:text-left py-4 lg:py-8">
-                
+
                 <!-- Breadcrumb -->
                 <nav class="flex items-center justify-center lg:justify-start gap-2 text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
-                    <a href="#" class="hover:text-emerald-600 transition-colors">Home</a>
+                    <a href="#" class="hover:text-green-600 transition-colors">
+                        Home
+                    </a>
                     <span>&gt;</span>
-                    <span class="text-gray-700 font-medium">Partnership</span>
+                    <span class="text-gray-700 font-medium">
+                        Partnership
+                    </span>
                 </nav>
 
                 <!-- Heading -->
                 <h1 class="text-2xl sm:text-4xl lg:text-[40px] font-bold text-slate-900 leading-snug sm:leading-[1.3] mt-2 mb-4 sm:mb-5 tracking-tight">
-                    Partnership That <br class="hidden sm:block" />
-                    Creates <span class="text-green-600">More Value</span> Together
+                    Partnership That <br class="hidden sm:block">
+                    Creates
+                    <span class="text-green-600">More Value</span>
+                    Together
                 </h1>
 
-                <!-- Subtitle / Paragraph -->
+                <!-- Description -->
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed sm:leading-8 mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0">
-                    At Unity Source, we believe strong partnerships lead to greater innovation, better solutions and shared success.
+                    At Unity Source, we believe strong partnerships lead to greater innovation,
+                    better solutions and shared success.
                 </p>
 
-                <!-- CTA Button -->
-                <a href="#" class="inline-flex items-center gap-2.5 bg-green-600 hover:bg-green-700 text-white font-medium px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group mb-6 lg:mb-0">
+                <!-- Button -->
+                <a href="#"
+                    class="inline-flex items-center gap-2.5 bg-green-600 hover:bg-green-700 text-white font-medium px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group">
+
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M18.5 13c-1.3 0-2.4.8-2.8 2H13c-.6 0-1.1-.2-1.5-.6l-3.3-3.3 1.4-1.4 2.8 2.8c.2.2.5.3.8.3h3.8c.4 1.2 1.5 2 2.8 2 1.7 0 3-1.3 3-3s-1.3-3-3-3c-1.1 0-2.1.6-2.6 1.5H13c-.9 0-1.8.4-2.4 1l-1.4 1.4-1.4-1.4C7.2 9.8 6.3 9.4 5.4 9.4H3.5C2.1 9.4 1 10.5 1 11.9v2.2c0 .8.4 1.6 1.1 2l3.4 2c.8.5 1.8.8 2.7.8h3.3c.9 0 1.8-.4 2.4-1l2.8-2.8c.4 1.2 1.5 2 2.8 2 1.7 0 3-1.3 3-3s-1.3-3-3-3z"/>
                     </svg>
+
                     <span>Become a Partner</span>
-                    <svg class="w-4 h-4 stroke-current stroke-2 fill-none transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+
+                    <svg class="w-4 h-4 stroke-current stroke-2 fill-none group-hover:translate-x-1 transition-transform"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                     </svg>
+
                 </a>
 
             </div>
 
-            
-           <div class="lg:col-span-6 flex justify-end items-center overflow-visible">
-                <div class="relative w-full max-w-xl lg:max-w-2xl xl:max-w-3xl lg:-ml-20">
-                    <img src="{{ asset('images/bg.jpg') }}" class="w-[600px] h-auto max-h-[800px] object-contain ml-auto" />
+            <!-- Right Image -->
+            <div class="lg:col-span-6 flex justify-end overflow-visible lg:pt-16">
+
+                <div class="relative w-full lg:-ml-20">
+
+                    <img
+                        src="{{ asset('images/part1.png') }}"
+                        alt="Partner"
+                        class="w-full max-w-[1400px] h-auto object-contain ml-auto">
+
                 </div>
+
             </div>
 
         </div>
