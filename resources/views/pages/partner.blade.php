@@ -30,7 +30,7 @@
 
                 <!-- Breadcrumb -->
                 <nav class="flex items-center justify-center lg:justify-start gap-2 text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
-                    <a href="#" class="hover:text-green-600 transition-colors">
+                    <a href="{{ route('home') }}" class="hover:text-green-600 transition-colors">
                         Home
                     </a>
                     <span>&gt;</span>
