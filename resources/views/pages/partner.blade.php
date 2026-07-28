@@ -77,7 +77,7 @@
                 <div class="relative w-full lg:-ml-20">
 
                     <img
-                        src="{{ asset('images/part1.png') }}"
+                        src="{{ asset('images/partner1.png') }}"
                         alt="Partner"
                         class="w-full max-w-[1400px] h-auto object-contain ml-auto">
 
