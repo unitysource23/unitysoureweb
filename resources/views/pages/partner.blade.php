@@ -2,6 +2,9 @@
 @section('title', 'Partner')
 @section('css')
     <style>
+        body{
+            font-family: 'poppins', sans-serif !important;
+        }
         .partner-background {
             background-image: url('{{ asset('images/handshake.jpg') }}');
             background-size: cover;
@@ -101,11 +104,11 @@
     </h2>
 
     <!-- Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
       
       <!-- Card 1: Reseller Partner -->
-      <div class="flex flex-col items-center justify-center text-center shadow-sm">
-        <div class="w-18 h-18 rounded-full text-green-600 flex items-center justify-center mb-5 p-4">
+      <div class="flex flex-col items-center justify-center text-center shadow-sm "> 
+        <div class="w-18 h-18 rounded-full bg-green-100 text-green-600 flex items-center justify-center mb-10 p-4">
           <!-- Handshake Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="m11 17 2 2a1 1 0 0 0 1.4 0l3.6-3.6a1 1 0 0 0 0-1.4l-2-2"></path>
@@ -113,41 +116,41 @@
             <path d="M2 11l4.5-4.5a1 1 0 0 1 1.4 0l2.1 2.1"></path>
           </svg>
         </div>
-        <h3 class="text-slate-900 font-bold text-base">Reseller Partner</h3>
+        <h3 class="text-slate-900 font-bold text-base mb-5">Reseller Partner</h3>
       </div>
 
       <!-- Card 2: Implementation Partner -->
       <div class="flex flex-col items-center justify-center text-center shadow-sm">
-        <div class="w-18 h-18 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center mb-5 p-4">
+        <div class="w-18 h-18 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center mb-10 p-4">
           <!-- Users Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
             <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
           </svg>
         </div>
-        <h3 class="text-slate-900 font-bold text-base">Implementation Partner</h3>
+        <h3 class="text-slate-900 font-bold text-base mb-5">Implementation Partner</h3>
       </div>
 
       <!-- Card 3: Technology Partner -->
       <div class="flex flex-col items-center justify-center text-center shadow-sm">
-        <div class="w-18 h-18 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-5 p-4">
+        <div class="w-18 h-18 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-10 p-4">
           <!-- Code Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
         </div>
-        <h3 class="text-slate-900 font-bold text-base">Technology Partner</h3>
+        <h3 class="text-slate-900 font-bold text-base mb-5">Technology Partner</h3>
       </div>
 
       <!-- Card 4: Referral Partner -->
       <div class="flex flex-col items-center justify-center text-center shadow-sm">
-        <div class="w-18 h-18 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center mb-5 p-4">
+        <div class="w-18 h-18 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center mb-10 p-4">
           <!-- Group Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
             <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
           </svg>
         </div>
-        <h3 class="text-slate-900 font-bold text-base">Referral Partner</h3>
+        <h3 class="text-slate-900 font-bold text-base mb-5">Referral Partner</h3>
       </div>
 
     </div>
@@ -160,7 +163,7 @@
         <div class="partner-overlay px-4 py-8 sm:px-6 lg:px-8">
             {{-- Our Partner Programme --}}
             <div class="mb-16">
-                <h1 class="font-bold text-2xl sm:text-3xl text-black text-center">{{ __('messages.partner_program') }}</h1>
+                <h1 class="font-bold text-2xl sm:text-3xl text-black text-center font-poppins">{{ __('messages.partner_program') }}</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
                     <div class="flex items-center">
                         <div>
@@ -198,7 +201,7 @@
     <div class="max-w-7xl mx-auto">
         
         <div class="text-center mb-14">
-            <h2 class="text-2xl md:text-3xl font-semibold text-slate-800 tracking-tight uppercase">Our Partners</h2>
+            <h2 class="text-2xl font-bold md:text-3xl font-poppins text-slate-800 tracking-tight uppercase">Our Partners</h2>
             <div class="w-16 h-0.5 bg-slate-300 mx-auto mt-4 rounded-full"></div> 
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-items-center">
@@ -209,7 +212,7 @@
                     <img src="images/Partner 1.png" alt="IT STUDENTS" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 </div>
                 <div class="p-5 text-center">
-                    <h3 class="text-base font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.it_students') }}</h3>
+                    <h3 class="text-base font-bold font-poppins text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.it_students') }}</h3>
                 </div>
             </div>
 
@@ -219,7 +222,7 @@
                     <img src="images/Partner 2.png" alt="ODOO ERP" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 </div>
                 <div class="p-5 text-center">
-                    <h3 class="text-base font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.odoo_erp') }}</h3>
+                    <h3 class="text-base font-bold font-poppins text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.odoo_erp') }}</h3>
                 </div>
             </div>
 
@@ -229,7 +232,7 @@
                     <img src="images/Partner 3.png" alt="HR STUDENTS" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 </div>
                 <div class="p-5 text-center">
-                    <h3 class="text-base font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.hr_students') }}</h3>
+                    <h3 class="text-base font-bold font-poppins text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.hr_students') }}</h3>
                 </div>
             </div>
 
@@ -239,7 +242,7 @@
                     <img src="images/Partner 4.png" alt="CLOUD SERVERS" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 </div>
                 <div class="p-5 text-center">
-                    <h3 class="text-base font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.cloud_servers') }}</h3>
+                    <h3 class="text-base font-bold font-poppins text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.cloud_servers') }}</h3>
                 </div>
             </div>
 
@@ -249,7 +252,7 @@
                     <img src="images/v1.jpg" alt="RECIRUMENT SERVICE" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 </div>
                 <div class="p-5 text-center">
-                    <h3 class="text-base font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.re_service') }}</h3>
+                    <h3 class="text-base font-bold font-poppins text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.re_service') }}</h3>
                 </div>
             </div>
 

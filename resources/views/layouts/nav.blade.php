@@ -8,10 +8,33 @@
         {{-- Desktop Menu --}}
         <div class="hidden md:flex items-center gap-10">
             <ul class="flex items-center gap-8 text-black text-base font-medium">
-                <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-green-600 font-bold underline underline-offset-[16px]' : 'hover:text-green-600 transition' }}">{{ __('messages.home') }}</a></li>
-                <li><a href="{{ route('partner') }}" class="{{ request()->routeIs('partner') ? 'text-green-600 font-bold' : 'hover:text-green-600 transition' }}">{{ __('messages.partnership') }}</a></li>
-                <li><a href="{{ route('our_products') }}" class="whitespace-nowrap {{ request()->routeIs('our_products') ? 'text-green-600 font-bold' : 'hover:text-green-600 transition' }}">{{ __('messages.products') }}</a></li>
-                <li><a href="{{ route('about_us') }}" class="whitespace-nowrap {{ request()->routeIs('about_us') ? 'text-green-600 font-bold' : 'hover:text-green-600 transition' }}">{{ __('messages.about_us') }}</a></li>
+                <li>
+                    <a href="{{ route('home') }}" 
+                    class="{{ request()->routeIs('home') ? 'text-green-600 font-bold underline underline-offset-[16px]' : 'hover:text-green-600 transition' }}">
+                        {{ __('messages.home') }}
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('partner') }}" 
+                    class="{{ request()->routeIs('partner') ? 'text-green-600 font-bold underline underline-offset-[16px]' : 'hover:text-green-600 transition' }}">
+                        {{ __('messages.partnership') }}
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('our_products') }}" 
+                    class="whitespace-nowrap {{ request()->routeIs('our_products') ? 'text-green-600 font-bold underline underline-offset-[16px]' : 'hover:text-green-600 transition' }}">
+                        {{ __('messages.products') }}
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="{{ route('about_us') }}" 
+                    class="whitespace-nowrap {{ request()->routeIs('about_us') ? 'text-green-600 font-bold underline underline-offset-[16px]' : 'hover:text-green-600 transition' }}">
+                        {{ __('messages.about_us') }}
+                    </a>
+                </li>
             </ul>
 
             @php
