@@ -94,6 +94,40 @@
 </nav>
 
 <script>
+
+    // Desktop language dropdown
+const desktopToggle = document.querySelector('.language-toggle-desktop');
+const desktopMenu = document.getElementById('language-menu');
+const desktopArrow = document.getElementById('desktop-arrow');
+
+if (desktopToggle && desktopMenu) {
+    desktopToggle.addEventListener('click', function (event) {
+        event.stopPropagation();
+
+        desktopMenu.classList.toggle('hidden');
+
+        if (desktopArrow) {
+            desktopArrow.classList.toggle('rotate-180');
+        }
+    });
+}
+
+// Mobile language dropdown
+const mobileToggle = document.querySelector('.language-toggle-mobile');
+const mobileLanguageMenu = document.getElementById('language-menu-mobile');
+const mobileArrow = document.getElementById('mobile-arrow');
+
+if (mobileToggle && mobileLanguageMenu) {
+    mobileToggle.addEventListener('click', function (event) {
+        event.stopPropagation();
+
+        mobileLanguageMenu.classList.toggle('hidden');
+
+        if (mobileArrow) {
+            mobileArrow.classList.toggle('rotate-180');
+        }
+    });
+}
     document.addEventListener('DOMContentLoaded', function () {
         var menuBtn = document.getElementById('menuButton');
         var mobileMenuArea = document.getElementById('additionalFilter');

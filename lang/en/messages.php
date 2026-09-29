@@ -41,7 +41,7 @@ return [
     'hire' => 'Hire Purchase and Installment Management System.',
     'recruit' => 'Recruiter',
     'advance' => 'Advanced recruitment and applicant tracking system.',
-    'city' => 'CHTY HR',
+    'city' => 'CITY HR',
     'human' => 'Human Resource Management Software for your organization.',
     'fast' => 'Fast Move',
     'distribute' => 'Distribution and Delivery System Software.',
@@ -75,7 +75,7 @@ return [
     'vocational_it' => 'Vocational IT',
     'cloud_server' => 'Cloud Server Support',
     'erp_support' => 'ERP Solution Support',
-    're_solution' => 'Reciruitment Solution',
+    're_solution' => 'Recruitment Solution',
     'partner_program' => 'Our Partner Program',
     'benefits' => 'Benefits',
     'benefit_1' => 'To achieve mutual benefit in both businesses',
@@ -84,7 +84,7 @@ return [
     'odoo_erp' => 'ODOO ERP',
     'hr_students' => 'HR STUDENTS',
     'cloud_servers' => 'CLOUD SERVERS',
-    're_service' => 'RECIRUITMENT SERVICE',
+    're_service' => 'RECRUITMENT SERVICE',
 
     //about_us
     'about_us_title' => 'About Us',

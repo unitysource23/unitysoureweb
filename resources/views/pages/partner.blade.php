@@ -249,7 +249,7 @@
             {{-- Card 5 --}}
             <div class="group bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 ease-out w-full max-w-[280px]">
                 <div class="overflow-hidden bg-slate-50">
-                    <img src="images/v1.jpg" alt="RECIRUMENT SERVICE" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                    <img src="images/v1.jpg" alt="RECRUITMENT SERVICE" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 </div>
                 <div class="p-5 text-center">
                     <h3 class="text-base font-bold font-poppins text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{{ __('messages.re_service') }}</h3>
